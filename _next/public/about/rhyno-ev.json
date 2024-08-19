@@ -1,0 +1,98 @@
+{
+  "nav": [
+    {
+      "icon": "",
+      "href": "/",
+      "title": "Home",
+      "subMenu": []
+    },
+    {
+      "icon": "",
+      "href": "/about-us",
+      "title": "About us",
+      "subMenu": []
+    },
+    {
+      "icon": "",
+      "href": "/products",
+      "title": "Products",
+      "subMenu": [
+        { "title": "SE03" },
+        { "title": "SE03 Max" },
+        { "title": "SE03 Lite" },
+        { "title": "Compare all" }
+      ]
+    },
+    {
+      "icon": "",
+      "href": "/contact-us",
+      "title": "Contact us",
+      "subMenu": []
+    },
+    {
+      "icon": "",
+      "href": "/prebook",
+      "title": "Pre-book Now",
+      "subMenu": []
+    },
+    {
+      "icon": "",
+      "href": "https://instagram.com/",
+      "title": "Instagram",
+      "subMenu": []
+    },
+    {
+      "icon": "",
+      "href": "https://linkedin.com/",
+      "title": "Linked In",
+      "subMenu": []
+    }
+  ],
+  "footer": [
+    {
+      "icon": "",
+      "href": "/rentals",
+      "title": "Rentals"
+    },
+    {
+      "icon": "",
+      "href": "/products",
+      "title": "Products"
+    },
+    {
+      "icon": "",
+      "href": "/contact-us",
+      "title": "Contact us"
+    },
+    {
+      "icon": "",
+      "href": "/contact-us",
+      "title": "Privacy policy"
+    },
+    {
+      "icon": "",
+      "href": "/contact-us",
+      "title": "Refund policy"
+    },
+    {
+      "icon": "",
+      "href": "/contact-us",
+      "title": "Website policy"
+    },
+    {
+      "icon": "",
+      "href": "https://linkedin.com",
+      "title": "Career"
+    },
+    {
+      "icon": "",
+      "href": "/https://instagram.com",
+      "title": "Instagram"
+    },
+    {
+      "icon": "",
+      "href": "https://linkedin.com",
+      "title": "Linkedin"
+    }
+  ]
+}
