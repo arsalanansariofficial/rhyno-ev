@@ -1,6 +1,9 @@
+'use client';
+
 import { toast } from 'sonner';
 
 import Header from '@/_components/header';
+import Footer from '@/_components/footer';
 import { Toaster } from '@/_components/ui/sonner';
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
@@ -19,21 +22,21 @@ export default function Contact() {
 
                 <div className="mt-8 flex flex-col gap-2">
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.email}
+                    href={rhynoEv.pages.contact.contactInfo.phone.href}
                     className="text-2xl font-bold text-pink-600"
                   >
-                    {rhynoEv.pages.contact.contactInfo.phone}
+                    {rhynoEv.pages.contact.contactInfo.phone.title}
                   </a>
 
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.email}
+                    href={rhynoEv.pages.contact.contactInfo.email.href}
                     className="text-2xl font-bold text-slate-700"
                   >
-                    {rhynoEv.pages.contact.contactInfo.email}
+                    {rhynoEv.pages.contact.contactInfo.email.title}
                   </a>
 
                   <address className="not-italic">
-                    {rhynoEv.pages.contact.contactInfo.address}
+                    {rhynoEv.pages.contact.contactInfo.address.title}
                   </address>
                 </div>
               </div>
@@ -115,6 +118,7 @@ export default function Contact() {
           </div>
         </section>
       </main>
+      <Footer />
       <Toaster />
     </>
   );
