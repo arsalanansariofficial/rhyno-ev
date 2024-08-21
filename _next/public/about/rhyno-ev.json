@@ -188,36 +188,15 @@
             }
           ],
           "keyFeatures": [
-            {
-              "title": "Fire-Safe Advanced LFP Battery",
-              "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
-            },
-            {
-              "title": "Range Prediction",
-              "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
-            },
-            {
-              "title": "Comfortable Ride",
-              "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
-            },
-            {
-              "title": "And Safe",
-              "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
-            }
+            "Fire-Safe Advanced LFP Battery",
+            "Range Prediction",
+            "Comfortable Ride",
+            "And Safe"
           ],
           "batteryFeatures": [
-            {
-              "title": "LFP with 1500 cycles",
-              "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
-            },
-            {
-              "title": "Active Balancing",
-              "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
-            },
-            {
-              "title": "Waterproof (IP67)",
-              "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
-            }
+            "LFP with 1500 cycles",
+            "Active Balancing",
+            "Waterproof (IP67)"
           ]
         },
         {
@@ -264,36 +243,15 @@
             }
           ],
           "keyFeatures": [
-            {
-              "title": "Fire-Safe Advanced LFP Battery",
-              "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
-            },
-            {
-              "title": "Range Prediction",
-              "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
-            },
-            {
-              "title": "Comfortable Ride",
-              "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
-            },
-            {
-              "title": "Stable and safe Specification",
-              "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
-            }
+            "Fire-safe battery",
+            "Range prediction",
+            "Comfortable ride",
+            "Stable and safe Specification"
           ],
           "batteryFeatures": [
-            {
-              "title": "LFP with 1500 cycles",
-              "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
-            },
-            {
-              "title": "Active Balancing",
-              "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
-            },
-            {
-              "title": "Waterproof (IP67)",
-              "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
-            }
+            "LFP with 1500 cycles",
+            "Active Balancing",
+            "Waterproof (IP67)"
           ]
         },
         {
@@ -340,36 +298,15 @@
             }
           ],
           "keyFeatures": [
-            {
-              "title": "Fire-Safe Advanced LFP Battery",
-              "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
-            },
-            {
-              "title": "Range Prediction",
-              "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
-            },
-            {
-              "title": "Comfortable Ride",
-              "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
-            },
-            {
-              "title": "Stable and Safe",
-              "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
-            }
+            "Fire-safe battery",
+            "Range prediction",
+            "Comfortable ride",
+            "Stable & Safe"
           ],
           "batteryFeatures": [
-            {
-              "title": "LFP with 1500 cycles",
-              "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
-            },
-            {
-              "title": "Active Balancing",
-              "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
-            },
-            {
-              "title": "Waterproof (IP67)",
-              "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
-            }
+            "LFP with 1500 cycles",
+            "Active Balancing",
+            "Waterproof (IP67)"
           ]
         }
       ]
