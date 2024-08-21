@@ -1,6 +1,8 @@
+import React from 'react';
+
 import Footer from '@/_components/footer';
 import Header from '@/_components/header';
-import rhynoEv from '../../public/about/rhyno-ev.json';
+import rhynoEv from '../../../public/about/rhyno-ev.json';
 
 export default function About() {
   return (

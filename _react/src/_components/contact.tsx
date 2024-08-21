@@ -5,7 +5,7 @@ import { toast } from 'sonner';
 import Header from '@/_components/header';
 import Footer from '@/_components/footer';
 import { Toaster } from '@/_components/ui/sonner';
-import rhynoEv from '../../public/about/rhyno-ev.json';
+import rhynoEv from '../../../public/about/rhyno-ev.json';
 
 export default function Contact() {
   return (

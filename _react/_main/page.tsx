@@ -1,12 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import Contact from '@/_components/contact';
+import About from '@/_components/about';
 
 import '@/globals.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Contact />
+    <About />
   </StrictMode>
 );
