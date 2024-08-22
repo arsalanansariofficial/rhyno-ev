@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 
-import './globals.css';
+import rhynoEv from '../public/about/rhyno-ev.json';
+
+import '@/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Rhyno EV by Arsalan Ansari',
-  description:
-    "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style."
+  title: rhynoEv.pages.home.meta.title,
+  description: rhynoEv.pages.home.meta.description
 };
 
 export default function RootLayout({
   children
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className="min-h-screen bg-background font-poppins antialiased">
