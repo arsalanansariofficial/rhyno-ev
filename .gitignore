@@ -54,7 +54,7 @@ yarn-error.log*
 ####################
 /.pnp
 .pnp.js
-/node_modules
+node_modules
 .yarn/install-state.gz
 
 ####################
