@@ -1,9 +1,9 @@
 {
   "title": "Rhyno EV",
-  "logo": "/img/icons/rhyno-ev.png",
+  "logo": "img/icons/rhyno-ev.png",
   "nav": {
     "home": {
-      "icon": "/img/icons/logo.svg",
+      "icon": "img/icons/logo.svg",
       "href": "index.html",
       "title": "Home"
     },
@@ -34,12 +34,12 @@
       "title": "Pre-book Now"
     },
     "instagram": {
-      "icon": "/img/icons/icon-instagram.svg",
+      "icon": "img/icons/icon-instagram.svg",
       "href": "https://instagram.com/",
       "title": "Instagram"
     },
     "linkedIn": {
-      "icon": "/img/icons/icon-pinterest.svg",
+      "icon": "img/icons/icon-pinterest.svg",
       "href": "https://linkedin.com/",
       "title": "Linked In"
     }
@@ -148,66 +148,50 @@
         {
           "id": "se-03-lite",
           "name": "SE03 Lite",
-          "images": {
-            "slate": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ],
-            "blue": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ],
-            "teal": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ]
-          },
+          "image": "img/vehicles/se-03.png",
           "colors": "",
           "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
             {
-              "feature": "Battery",
-              "description": "1.8 KwH"
+              "title": "Battery",
+              "value": "1.8 KwH"
             },
             {
-              "feature": "Batter Warranty",
-              "description": "3 Years"
+              "title": "Batter Warranty",
+              "value": "3 Years"
             },
             {
-              "feature": "Charging Time",
-              "description": "3 Hours (12 A)"
+              "title": "Charging Time",
+              "value": "3 Hours (12 A)"
             },
             {
-              "feature": "Motor",
-              "description": "1500 W"
+              "title": "Motor",
+              "value": "1500 W"
             },
             {
-              "feature": "Max Speed",
-              "description": "50 Km/H"
+              "title": "Max Speed",
+              "value": "50 Km/H"
             },
             {
-              "feature": "Warranty On Electronics",
-              "description": "1 Year"
+              "title": "Warranty On Electronics",
+              "value": "1 Year"
             },
             {
-              "feature": "Max Range (@30 Km/H)",
-              "description": "100 Km"
+              "title": "Max Range (@30 Km/H)",
+              "value": "100 Km"
             },
             {
-              "feature": "Max Range (@45 Km/H)",
-              "description": "90 Km"
+              "title": "Max Range (@45 Km/H)",
+              "value": "90 Km"
             },
             {
-              "feature": "Max Range (@Full Speed)",
-              "description": "60 Km"
+              "title": "Max Range (@Full Speed)",
+              "value": "60 Km"
             }
           ],
           "keyFeatures": [
             {
-              "feature": "Fire-Safe Advanced LFP Battery",
+              "title": "Fire-Safe Advanced LFP Battery",
               "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
             },
             {
@@ -225,15 +209,15 @@
           ],
           "batteryFeatures": [
             {
-              "feature": "LFP with 1500 cycles",
+              "title": "LFP with 1500 cycles",
               "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
             },
             {
-              "feature": "Active Balancing",
+              "title": "Active Balancing",
               "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
             },
             {
-              "feature": "Waterproof (IP67)",
+              "title": "Waterproof (IP67)",
               "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
             }
           ]
@@ -241,92 +225,76 @@
         {
           "id": "se-03",
           "name": "SE03",
-          "images": {
-            "slate": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ],
-            "blue": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ],
-            "teal": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ]
-          },
+          "image": "",
           "colors": "",
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive link for GTX : a. Vehicle image b. Color selection buttons c. Textual details Rhyno GTX. Buy now 90-150 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
             {
-              "feature": "Battery",
-              "description": "2.7 KwH"
+              "title": "Battery",
+              "value": "2.7 KwH"
             },
             {
-              "feature": "Batter Warranty",
-              "description": "3 Years"
+              "title": "Batter Warranty",
+              "value": "3 Years"
             },
             {
-              "feature": "Charging Time",
-              "description": "3 Hours (12 A)"
+              "title": "Charging Time",
+              "value": "3 Hours (12 A)"
             },
             {
-              "feature": "Motor",
-              "description": "1500 W"
+              "title": "Motor",
+              "value": "1500 W"
             },
             {
-              "feature": "Max Speed",
-              "description": "55 Km/H"
+              "title": "Max Speed",
+              "value": "55 Km/H"
             },
             {
-              "feature": "Warranty On Electronics",
-              "description": "1 Year"
+              "title": "Warranty On Electronics",
+              "value": "1 Year"
             },
             {
-              "feature": "Max Range (@30 Km/H)",
-              "description": "100 Km"
+              "title": "Max Range (@30 Km/H)",
+              "value": "100 Km"
             },
             {
-              "feature": "Max Range (@45 Km/H)",
-              "description": "90 Km"
+              "title": "Max Range (@45 Km/H)",
+              "value": "90 Km"
             },
             {
-              "feature": "Max Range (@Full Speed)",
-              "description": "60 Km"
+              "title": "Max Range (@Full Speed)",
+              "value": "60 Km"
             }
           ],
           "keyFeatures": [
             {
-              "feature": "Fire-Safe Advanced LFP Battery",
+              "title": "Fire-Safe Advanced LFP Battery",
               "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
             },
             {
-              "feature": "Range Prediction",
+              "title": "Range Prediction",
               "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
             },
             {
-              "feature": "Comfortable Ride",
+              "title": "Comfortable Ride",
               "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
             },
             {
-              "feature": "Stable and safe Specification",
+              "title": "Stable and safe Specification",
               "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
             }
           ],
           "batteryFeatures": [
             {
-              "feature": "LFP with 1500 cycles",
+              "title": "LFP with 1500 cycles",
               "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
             },
             {
-              "feature": "Active Balancing",
+              "title": "Active Balancing",
               "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
             },
             {
-              "feature": "Waterproof (IP67)",
+              "title": "Waterproof (IP67)",
               "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
             }
           ]
@@ -334,92 +302,76 @@
         {
           "id": "se-03-max",
           "name": "SE03 Max",
-          "images": {
-            "slate": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ],
-            "blue": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ],
-            "teal": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
-            ]
-          },
+          "image": "",
           "colors": "",
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-120 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhino. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
             {
-              "feature": "Battery",
-              "description": "2.7 KwH"
+              "title": "Battery",
+              "value": "2.7 KwH"
             },
             {
-              "feature": "Batter Warranty",
-              "description": "3 Years"
+              "title": "Batter Warranty",
+              "value": "3 Years"
             },
             {
-              "feature": "Charging Time",
-              "description": "4 Hours (12 A)"
+              "title": "Charging Time",
+              "value": "4 Hours (12 A)"
             },
             {
-              "feature": "Motor",
-              "description": "2000 W"
+              "title": "Motor",
+              "value": "2000 W"
             },
             {
-              "feature": "Max Speed",
-              "description": "65 Km/H"
+              "title": "Max Speed",
+              "value": "65 Km/H"
             },
             {
-              "feature": "Warranty On Electronics",
-              "description": "1 Year"
+              "title": "Warranty On Electronics",
+              "value": "1 Year"
             },
             {
-              "feature": "Max Range (@30 Km/H)",
-              "description": "120 Km"
+              "title": "Max Range (@30 Km/H)",
+              "value": "120 Km"
             },
             {
-              "feature": "Max Range (@45 Km/H)",
-              "description": "90 Km"
+              "title": "Max Range (@45 Km/H)",
+              "value": "90 Km"
             },
             {
-              "feature": "Max Range (@Full Speed)",
-              "description": "80 Km"
+              "title": "Max Range (@Full Speed)",
+              "value": "80 Km"
             }
           ],
           "keyFeatures": [
             {
-              "feature": "Fire-Safe Advanced LFP Battery",
+              "title": "Fire-Safe Advanced LFP Battery",
               "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
             },
             {
-              "feature": "Range Prediction",
+              "title": "Range Prediction",
               "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
             },
             {
-              "feature": "Comfortable Ride",
+              "title": "Comfortable Ride",
               "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
             },
             {
-              "feature": "Stable and Safe",
+              "title": "Stable and Safe",
               "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
             }
           ],
           "batteryFeatures": [
             {
-              "feature": "LFP with 1500 cycles",
+              "title": "LFP with 1500 cycles",
               "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
             },
             {
-              "feature": "Active Balancing",
+              "title": "Active Balancing",
               "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
             },
             {
-              "feature": "Waterproof (IP67)",
+              "title": "Waterproof (IP67)",
               "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
             }
           ]
