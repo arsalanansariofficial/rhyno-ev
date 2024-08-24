@@ -9,8 +9,6 @@ import { getColumnDefinition, pretty } from '@/_lib/utils';
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Compare() {
-  const columns = getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders);
-
   return (
     <>
       <Header />
@@ -139,7 +137,9 @@ export default function Compare() {
                         {pretty(Object.keys(vehicle).at(-1) as string)}
                       </h2>
                       <DataTable
-                        columns={columns}
+                        columns={getColumnDefinition(
+                          rhynoEv.pages.vehicles.tableHeaders
+                        )}
                         data={vehicle.batteryFeatures}
                       />
                     </div>
@@ -147,7 +147,7 @@ export default function Compare() {
                       href={rhynoEv.nav.prebook.href}
                       className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
                     >
-                      Buy Now
+                      {rhynoEv.nav.prebook.title}
                     </a>
                   </div>
                 </div>
@@ -156,19 +156,16 @@ export default function Compare() {
           );
         })}
 
-        <section className="mx-auto max-w-7xl p-3 sm:px-6 md:px-12 lg:px-24">
-          <ul className="space-y-8 lg:grid lg:grid-cols-3 lg:gap-4 lg:space-y-0">
-            {rhynoEv.pages.vehicles.vehicleList.map((vehicle, index) => {
-              return (
-                <li key={index} className="space-y-4">
-                  <h3 className="text-center-- text-3xl font-bold leading-none tracking-tighter text-neutral-600">
-                    {vehicle.name}
-                  </h3>
-                  <DataTable columns={columns} data={vehicle.specs} />
-                </li>
-              );
-            })}
-          </ul>
+        <section className="mx-auto max-w-7xl space-y-4 p-3 sm:px-6 md:px-12 lg:px-24">
+          <div className="space-y-4">
+            <h3 className="text-center-- text-3xl font-bold leading-none tracking-tighter text-neutral-600">
+              {rhynoEv.pages.vehicles.tableHeadings[0]}
+            </h3>
+            <DataTable
+              columns={getColumnDefinition(rhynoEv.pages.compare.tableHeaders)}
+              data={rhynoEv.pages.compare.comparison}
+            />
+          </div>
         </section>
       </main>
       <Footer />
