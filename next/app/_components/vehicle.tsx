@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import * as ShadCarousel from '@/_components/ui/carousel';
 
-import { cn, getColumnDefinition, pretty } from '@/_lib/utils';
 import Header from '@/_components/header';
 import Footer from '@/_components/footer';
 import { DataTable } from './ui/data-table';
+import { cn, getColumnDefinition, pretty } from '@/_lib/utils';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
@@ -14,15 +14,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
   const [variant, setVariant] = useState('slate');
 
   const vehicle = rhynoEv.pages.vehicles.vehicleList[vehicleIndex];
-
-  const title = vehicle.batteryFeatures[vehicleIndex].feature;
-  const description = vehicle.batteryFeatures[vehicleIndex].description;
   const images = vehicle.images[variant as keyof typeof vehicle.images];
-
-  const columns = getColumnDefinition<{
-    feature: string;
-    description: string;
-  }>(['Feature', 'Description']);
 
   return (
     <>
@@ -61,6 +53,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
             <div className="mb-16 mt-12 flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow lg:pl-6">
               <div className="flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow">
                 <div className="mb-4 flex w-1/3 gap-2">
+                  {/* <span className='hidden bg-slate-500 bg-blue-500 bg-teal-500'></span> */}
                   {Object.keys(vehicle.images).map((color, index) => {
                     return (
                       <button
@@ -70,7 +63,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
                           setVariant(color);
                         }}
                         className={cn(
-                          'aspect-square w-10 rounded-lg',
+                          `aspect-square w-10 rounded-lg`,
                           `bg-${color}-500`,
                           color === variant && 'border-2 border-sky-800'
                         )}
@@ -82,10 +75,10 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
                   {rhynoEv.pages.home.tagline}
                 </span>
                 <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
-                  {title}
+                  {vehicle.name}
                 </h1>
                 <p className="mb-8 text-left text-base leading-relaxed text-gray-500">
-                  {description}
+                  {vehicle.description}
                 </p>
               </div>
               <dl className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -181,14 +174,20 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
               Specifications
             </h2>
-            <DataTable columns={columns} data={vehicle.specs} />
+            <DataTable
+              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
+              data={vehicle.specs}
+            />
           </div>
 
           <div className="mb-8 space-y-8">
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
               {pretty(Object.keys(vehicle).at(-1) as string)}
             </h2>
-            <DataTable columns={columns} data={vehicle.batteryFeatures} />
+            <DataTable
+              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
+              data={vehicle.batteryFeatures}
+            />
           </div>
 
           <a

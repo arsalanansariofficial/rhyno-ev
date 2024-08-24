@@ -9,10 +9,7 @@ import { getColumnDefinition, pretty } from '@/_lib/utils';
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Compare() {
-  const columns = getColumnDefinition<{
-    feature: string;
-    description: string;
-  }>(['Feature', 'Description']);
+  const columns = getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders);
 
   return (
     <>

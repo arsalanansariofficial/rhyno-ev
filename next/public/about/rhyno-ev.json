@@ -17,9 +17,9 @@
       "href": "vehicles.html",
       "title": "vehicles",
       "subMenu": [
-        { "title": "SE03", "href": "/vehicles/se-03" },
-        { "title": "SE03 Max", "href": "/vehicles/se-03-max" },
-        { "title": "SE03 Lite", "href": "/vehicles/se-03-lite" },
+        { "title": "GTX LITE", "href": "/vehicles/gtx-lite" },
+        { "title": "GTX", "href": "/vehicles/gtx" },
+        { "title": "GTX MAX", "href": "/vehicles/gtx-max" },
         { "title": "Compare all", "href": "/vehicles/compare" }
       ]
     },
@@ -47,7 +47,7 @@
   "footer": {
     "rentals": {
       "icon": "",
-      "href": "rentals.html",
+      "href": "/rentals",
       "title": "Rentals"
     },
     "vehicles": {
@@ -144,25 +144,26 @@
         "title": "vehicles, Rhyno EV",
         "description": "vehicles that have less friction than ever before."
       },
+      "tableHeaders": ["feature", "description"],
       "vehicleList": [
         {
-          "id": "se-03-lite",
-          "name": "SE03 Lite",
+          "id": "gtx-lite",
+          "name": "GTX LITE",
           "images": {
             "slate": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ],
             "blue": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ],
             "teal": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ]
           },
           "colors": "",
@@ -247,23 +248,23 @@
           ]
         },
         {
-          "id": "se-03",
-          "name": "SE03",
+          "id": "gtx",
+          "name": "GTX",
           "images": {
             "slate": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ],
             "blue": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ],
             "teal": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ]
           },
           "colors": "",
@@ -348,23 +349,23 @@
           ]
         },
         {
-          "id": "se-03-max",
-          "name": "SE03 Max",
+          "id": "gtx-max",
+          "name": "GTX MAX",
           "images": {
             "slate": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ],
             "blue": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ],
             "teal": [
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png",
-              "/img/vehicles/se-03.png"
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png",
+              "/img/vehicles/gtx.png"
             ]
           },
           "colors": "",
@@ -450,6 +451,85 @@
         }
       ]
     },
+    "compare": {
+      "icon": "",
+      "path": "/compare",
+      "title": "Compare",
+      "component": "compare",
+      "meta": {
+        "title": "Compare | Rhyno EV",
+        "description": "Compare our best offerings, to find out which vehicle is the best match for you."
+      },
+      "tableHeaders": ["feature", "GTX LITE", "GTX", "GTX Max"],
+      "comparison": [
+        {
+          "feature": "Battery",
+          "GTX LITE": "1.8 KwH",
+          "GTX": "2.7 KwH",
+          "GTX Max": "2.7 KwH"
+        },
+        {
+          "feature": "Battery Features",
+          "GTX LITE": "LFP with 1500 cycles, Active Balancing, Waterproof (IP67)",
+          "GTX": "LFP with 1500 cycles, Active Balancing, Waterproof (IP67)",
+          "GTX Max": "LFP with 1500 cycles, Active Balancing, Waterproof (IP67)"
+        },
+        {
+          "feature": "Battery Warranty",
+          "GTX LITE": "3 Years",
+          "GTX": "3 Years",
+          "GTX Max": "3 Years"
+        },
+        {
+          "feature": "Charging Time",
+          "GTX LITE": "3 Hours (12 A)",
+          "GTX": "3 Hours (12 A)",
+          "GTX Max": "3 Hours (12 A)"
+        },
+        {
+          "feature": "Motor",
+          "GTX LITE": "1500 W",
+          "GTX": "1500 W",
+          "GTX Max": "2000 W"
+        },
+        {
+          "feature": "Max Speed",
+          "GTX LITE": "50 Km/H",
+          "GTX": "55 Km/H",
+          "GTX Max": "65 Km/H"
+        },
+        {
+          "feature": "Warranty On Electronics",
+          "GTX LITE": "1 Year",
+          "GTX": "1 Year",
+          "GTX Max": "1 Year"
+        },
+        {
+          "feature": "Max Range (@30 Km/H)",
+          "GTX LITE": "100 Km",
+          "GTX": "100 Km",
+          "GTX Max": "120 Km"
+        },
+        {
+          "feature": "Max Range (@45 Km/H)",
+          "GTX LITE": "90 Km",
+          "GTX": "90 Km",
+          "GTX Max": "90 Km"
+        },
+        {
+          "feature": "Max Range (@Full Speed)",
+          "GTX LITE": "60 Km",
+          "GTX": "60 Km",
+          "GTX Max": "80 Km"
+        },
+        {
+          "feature": "Other Key Benefits",
+          "GTX LITE": "Fire-Safe Advanced LFP Battery, Range Prediction, Comfortable Ride, Stable and Safe",
+          "GTX": "Fire-Safe Advanced LFP Battery, Range Prediction, Comfortable Ride, Stable and Safe",
+          "GTX Max": "Fire-Safe Advanced LFP Battery, Range Prediction, Comfortable Ride, Stable and Safe"
+        }
+      ]
+    },
     "contact": {
       "icon": "",
       "path": "contact",
@@ -485,6 +565,33 @@
         "title": "Prebook, Rhyno EV",
         "description": "Book your vehicle to put yourself infront of the queue."
       }
+    },
+    "rentals": {
+      "icon": "",
+      "path": "/rentals",
+      "title": "Rentals",
+      "component": "Pre-book Now",
+      "meta": {
+        "title": "Rentals | Rhyno EV",
+        "description": "Rent rhyno EV's for a short ride."
+      },
+      "pricing": [
+        {
+          "chargePKM": 3,
+          "baseCharge": 10,
+          "name": "GTX LITE"
+        },
+        {
+          "chargePKM": 5,
+          "baseCharge": 10,
+          "name": "GTX"
+        },
+        {
+          "chargePKM": 7,
+          "baseCharge": 10,
+          "name": "GTX MAX"
+        }
+      ]
     }
   }
 }

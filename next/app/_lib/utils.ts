@@ -8,8 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 
 export function getColumnDefinition<T>(headers: string[]) {
   return headers.map(header => ({
-    accessorKey: header.toLowerCase(),
-    header: header
+    header,
+    accessorKey: header
   })) as ColumnDef<T>[];
 }
 
