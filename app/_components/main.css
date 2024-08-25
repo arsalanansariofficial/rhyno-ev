@@ -1,0 +1,220 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media (min-width: 40em) {
+    min-height: 100vh;
+    display: flex;
+  }
+}
+
+.card_header {
+  background: url('/img/vehicles/bg-main-mobile.png') no-repeat center/cover;
+  max-height: 11.25em;
+
+  @media (min-width: 40em) {
+    background: url('/img/vehicles/bg-main-desktop.png') no-repeat center/cover;
+    max-height: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: 60em) {
+    gap: 1em;
+  }
+}
+
+.card_header--back,
+.card_header--front {
+  margin-inline: auto;
+  padding: 1em 0;
+  width: 18em;
+  height: 8em;
+  position: relative;
+  scale: 0.85;
+
+  & > * {
+    position: absolute;
+  }
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card_header--back {
+  translate: 10% 0;
+
+  & > .card-img-cvc {
+    color: white;
+    font-size: 1rem;
+    text-align: right;
+    margin: 0.85em 0 0 0;
+    top: 4em;
+    right: 3em;
+
+    @media (min-width: 60em) {
+      margin: 0;
+      top: 3.7em;
+    }
+  }
+
+  @media (min-width: 40em) {
+    order: 1;
+    translate: 0 0;
+  }
+
+  @media (min-width: 60em) {
+    border-radius: 0.5em;
+    box-shadow: 0px 5px 30px 0px rgba(142, 133, 147, 0.3);
+    order: 1;
+    translate: 50% 0;
+    padding: 0;
+  }
+}
+
+.card_header--front {
+  letter-spacing: 3px;
+  translate: -10% -50%;
+
+  & > .card-logo {
+    margin: 1em;
+    width: 3em;
+    max-height: 1.5em;
+    aspect-ratio: 1/1;
+  }
+
+  & > .card-img-number {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0 2rem 0 1rem;
+    top: 60%;
+    left: 0;
+    right: 0;
+  }
+
+  & > .card-img-name {
+    font: inherit;
+    font-size: 0.7rem;
+    margin: 0 0 0.5rem 1rem;
+    left: 0;
+    bottom: 0;
+  }
+
+  & > .card-img-date {
+    font: inherit;
+    font-size: 0.7rem;
+    margin: 0 2rem 0.5rem 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: 40em) {
+    translate: 0 0;
+  }
+
+  @media (min-width: 60em) {
+    border-radius: 0.5em;
+    box-shadow: 0px 5px 30px 0px rgba(142, 133, 147, 0.3);
+    padding: 0;
+    translate: 25% 0;
+  }
+}
+
+.card_form {
+  margin: 3em auto;
+  padding: 1em;
+  max-width: 25em;
+
+  & > .form-control + .form-control {
+    margin-top: 0.5em;
+  }
+
+  @media (min-width: 40em) {
+    margin: auto;
+  }
+}
+
+.form-control {
+  & > label,
+  & > span {
+    font: inherit;
+    font-size: 0.7rem;
+  }
+
+  & > .validation {
+    color: var(--error);
+    text-transform: initial;
+  }
+
+  & > input {
+    border-radius: 0.5em;
+    font: inherit;
+    font-size: 0.7rem;
+    margin-top: 0.3em;
+    padding: 1em;
+    width: 100%;
+    display: block;
+
+    &:focus-visible {
+      border-image: var(--active-input-border);
+    }
+  }
+}
+
+.card_form--date-cvc {
+  margin-top: 0.5em;
+  gap: 1em;
+  display: flex;
+
+  & > .validation {
+    color: var(--error);
+    text-transform: initial;
+  }
+}
+
+.card-date-validation {
+  max-width: 7em;
+
+  & > .validation {
+    color: var(--error);
+    text-transform: initial;
+    font: inherit;
+    font-size: 0.7rem;
+  }
+}
+
+.card-date {
+  gap: 0.5em;
+  display: flex;
+}
+
+.card-cvc {
+  flex-grow: 1;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 0.5em;
+  text-transform: capitalize;
+  font: inherit;
+  font-size: 1rem;
+  margin-top: 1em;
+  padding: 1em;
+  width: 100%;
+  cursor: pointer;
+
+  @media (min-width: 40em) {
+    font-size: 0.75rem;
+  }
+}

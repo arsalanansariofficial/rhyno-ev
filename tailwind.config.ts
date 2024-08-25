@@ -43,6 +43,15 @@ const config: Config = {
           '400': '#414141',
           '500': '#373737'
         },
+        violet: {
+          100: '#dedddf',
+          500: '#8e8593',
+          900: '#21092f'
+        },
+        green: {
+          500: '#8e8593b3',
+          700: '#ff5252'
+        },
         ring: 'hsl(var(--ring))',
         input: 'hsl(var(--input))',
         border: 'hsl(var(--border))',
