@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import Vehicle from '@/_components/vehicle';
-import rhynoEv from '../../../public/about/rhyno-ev.json';
+import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export async function generateMetadata(props: {
   params: { vehicleId: string };

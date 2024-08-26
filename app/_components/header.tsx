@@ -9,7 +9,7 @@ import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import rhynoEv from '../../public/about/rhyno-ev.json';
 import user from '../../public/about/arsalan-ansari.json';
 
-export default function Header() {
+export default function Header({ cta = true }: { cta?: boolean }) {
   return (
     <header className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="md:flex md:items-center md:gap-12">
+          <div className="flex items-center md:gap-12">
             <ul className="hidden items-center gap-6 text-sm md:flex">
               <li>
                 <a
@@ -106,16 +106,20 @@ export default function Header() {
               </li>
             </ul>
 
-            <div className="flex items-center gap-4">
-              <div className="sm:flex sm:gap-4">
-                <a
-                  href={rhynoEv.nav.prebook.href}
-                  className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
-                >
-                  {rhynoEv.nav.prebook.title}
-                </a>
+            {cta && (
+              <div className="flex items-center gap-4">
+                <div className="sm:flex sm:gap-4">
+                  <a
+                    href={rhynoEv.nav.prebook.href}
+                    className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
+                  >
+                    {rhynoEv.nav.prebook.title}
+                  </a>
+                </div>
               </div>
+            )}
 
+            <div className="flex items-center gap-4 md:hidden">
               <Shad.Sheet>
                 <Shad.SheetTrigger className="block rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 md:hidden">
                   <svg
@@ -133,140 +137,141 @@ export default function Header() {
                     />
                   </svg>
                 </Shad.SheetTrigger>
-                <Shad.SheetContent className="md:hidden">
+                <Shad.SheetContent
+                  className="md:hidden"
+                  aria-describedby={undefined}
+                >
                   <Shad.SheetHeader>
                     <Shad.SheetTitle className="text-left">
                       {rhynoEv.title}
                     </Shad.SheetTitle>
-                    <Shad.SheetDescription>
-                      <div className="bg-white flex h-screen flex-col justify-between text-left">
-                        <ul className="mt-4 space-y-1">
-                          <li>
-                            <a
-                              href={rhynoEv.nav.home.href}
-                              className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
-                            >
-                              {rhynoEv.nav.home.title}
-                            </a>
-                          </li>
-
-                          <li>
-                            <a
-                              href={rhynoEv.nav.about.href}
-                              className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                            >
-                              {rhynoEv.nav.about.title}
-                            </a>
-                          </li>
-
-                          <li>
-                            <details className="group [&_summary::-webkit-details-marker]:hidden">
-                              <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span className="text-sm font-medium">
-                                  {rhynoEv.nav.vehicles.title}
-                                </span>
-
-                                <span className="shrink-0 transition duration-300 group-open:-rotate-180">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="size-5"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                  >
-                                    <path
-                                      fillRule="evenodd"
-                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                      clipRule="evenodd"
-                                    />
-                                  </svg>
-                                </span>
-                              </summary>
-
-                              <ul className="mt-2 space-y-1 px-4">
-                                {rhynoEv.nav.vehicles.subMenu.map(
-                                  (menuItem, index) => {
-                                    return (
-                                      <li key={index}>
-                                        <a
-                                          href={menuItem.href}
-                                          className="block rounded-lg px-4 py-2 text-sm font-medium capitalize text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                                        >
-                                          {menuItem.title}
-                                        </a>
-                                      </li>
-                                    );
-                                  }
-                                )}
-                              </ul>
-                            </details>
-                          </li>
-
-                          <li>
-                            <a
-                              href={rhynoEv.nav.contact.href}
-                              className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                            >
-                              {rhynoEv.nav.contact.title}
-                            </a>
-                          </li>
-                        </ul>
-
-                        <ul className="mb-16 mt-auto flex gap-4">
-                          <li>
-                            <a
-                              className="text-teal-600 md:block"
-                              href={rhynoEv.nav.instagram.href}
-                            >
-                              <span className="sr-only">
-                                {rhynoEv.nav.instagram.title}
-                              </span>
-                              <FontAwesomeIcon
-                                icon={faInstagram}
-                                className="text-xl"
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="text-teal-600 md:block"
-                              href={rhynoEv.nav.linkedIn.href}
-                            >
-                              <span className="sr-only">
-                                {rhynoEv.nav.linkedIn.title}
-                              </span>
-                              <FontAwesomeIcon
-                                icon={faLinkedin}
-                                className="text-xl"
-                              />
-                            </a>
-                          </li>
-                        </ul>
-
-                        <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">
-                          <a
-                            href={rhynoEv.nav.home.href}
-                            className="bg-white flex items-center gap-2 p-4 hover:bg-gray-50"
-                          >
-                            <img
-                              alt={user.name}
-                              src={user.image}
-                              className="size-10 rounded-full object-cover"
-                            />
-
-                            <div>
-                              <p className="text-xs">
-                                <strong className="block font-medium">
-                                  {user.name}
-                                </strong>
-
-                                <span>{user.email}</span>
-                              </p>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </Shad.SheetDescription>
                   </Shad.SheetHeader>
+                  <div className="bg-white flex h-screen flex-col justify-between text-left">
+                    <ul className="mt-4 space-y-1">
+                      <li>
+                        <a
+                          href={rhynoEv.nav.home.href}
+                          className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+                        >
+                          {rhynoEv.nav.home.title}
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href={rhynoEv.nav.about.href}
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                        >
+                          {rhynoEv.nav.about.title}
+                        </a>
+                      </li>
+
+                      <li>
+                        <details className="group [&_summary::-webkit-details-marker]:hidden">
+                          <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                            <span className="text-sm font-medium">
+                              {rhynoEv.nav.vehicles.title}
+                            </span>
+
+                            <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="size-5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clipRule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </summary>
+
+                          <ul className="mt-2 space-y-1 px-4">
+                            {rhynoEv.nav.vehicles.subMenu.map(
+                              (menuItem, index) => {
+                                return (
+                                  <li key={index}>
+                                    <a
+                                      href={menuItem.href}
+                                      className="block rounded-lg px-4 py-2 text-sm font-medium capitalize text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                                    >
+                                      {menuItem.title}
+                                    </a>
+                                  </li>
+                                );
+                              }
+                            )}
+                          </ul>
+                        </details>
+                      </li>
+
+                      <li>
+                        <a
+                          href={rhynoEv.nav.contact.href}
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                        >
+                          {rhynoEv.nav.contact.title}
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul className="mb-16 mt-auto flex gap-4">
+                      <li>
+                        <a
+                          className="text-teal-600 md:block"
+                          href={rhynoEv.nav.instagram.href}
+                        >
+                          <span className="sr-only">
+                            {rhynoEv.nav.instagram.title}
+                          </span>
+                          <FontAwesomeIcon
+                            icon={faInstagram}
+                            className="text-xl"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="text-teal-600 md:block"
+                          href={rhynoEv.nav.linkedIn.href}
+                        >
+                          <span className="sr-only">
+                            {rhynoEv.nav.linkedIn.title}
+                          </span>
+                          <FontAwesomeIcon
+                            icon={faLinkedin}
+                            className="text-xl"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">
+                      <a
+                        href={rhynoEv.nav.home.href}
+                        className="bg-white flex items-center gap-2 p-4 hover:bg-gray-50"
+                      >
+                        <img
+                          alt={user.name}
+                          src={user.image}
+                          className="size-10 rounded-full object-cover"
+                        />
+
+                        <div>
+                          <p className="text-xs">
+                            <strong className="block font-medium">
+                              {user.name}
+                            </strong>
+
+                            <span>{user.email}</span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </Shad.SheetContent>
               </Shad.Sheet>
             </div>

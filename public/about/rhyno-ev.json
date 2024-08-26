@@ -4,28 +4,28 @@
   "nav": {
     "home": {
       "icon": "/img/icons/logo.svg",
-      "href": "index.html",
+      "href": "/",
       "title": "Home"
     },
     "about": {
       "icon": "",
-      "href": "about.html",
+      "href": "/about",
       "title": "About us"
     },
     "vehicles": {
       "icon": "",
-      "href": "vehicles.html",
+      "href": "/gtx-lite",
       "title": "vehicles",
       "subMenu": [
-        { "title": "GTX LITE", "href": "/vehicles/gtx-lite" },
-        { "title": "GTX", "href": "/vehicles/gtx" },
-        { "title": "GTX MAX", "href": "/vehicles/gtx-max" },
-        { "title": "Compare all", "href": "/vehicles/compare" }
+        { "title": "GTX LITE", "href": "gtx-lite" },
+        { "title": "GTX", "href": "gtx" },
+        { "title": "GTX MAX", "href": "gtx-max" },
+        { "title": "Compare all", "href": "compare" }
       ]
     },
     "contact": {
       "icon": "",
-      "href": "contact.html",
+      "href": "/contact",
       "title": "Contact us"
     },
     "prebook": {
@@ -42,6 +42,11 @@
       "icon": "/img/icons/icon-pinterest.svg",
       "href": "https://linkedin.com/",
       "title": "Linked In"
+    },
+    "auth": {
+      "icon": "",
+      "href": "/auth",
+      "title": "Auth"
     }
   },
   "footer": {
@@ -52,27 +57,27 @@
     },
     "vehicles": {
       "icon": "",
-      "href": "vehicles.html",
+      "href": "/gtx-lite",
       "title": "vehicles"
     },
     "contact": {
       "icon": "",
-      "href": "contact.html",
+      "href": "/contact",
       "title": "Contact us"
     },
     "privacyPolicy": {
       "icon": "",
-      "href": "about/privacy-policy.pdf",
+      "href": "/about/privacy-policy.pdf",
       "title": "Privacy policy"
     },
     "refundPolicy": {
       "icon": "",
-      "href": "about/refund-policy.pdf",
+      "href": "/about/refund-policy.pdf",
       "title": "Refund policy"
     },
     "websitePolicy": {
       "icon": "",
-      "href": "about/website-policy.pdf",
+      "href": "/about/website-policy.pdf",
       "title": "Website policy"
     },
     "career": {
@@ -94,7 +99,7 @@
   "pages": {
     "home": {
       "icon": "",
-      "path": "index.html",
+      "path": "/",
       "title": "Home",
       "component": "Home",
       "tagline": "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style.",
@@ -564,7 +569,8 @@
       "component": "Prebook",
       "meta": {
         "title": "Prebook, Rhyno EV",
-        "description": "Book your vehicle to put yourself infront of the queue."
+        "description": "Book your vehicle to put yourself infront of the queue.",
+        "successMessage": "🎉 Payment Sucessful."
       }
     },
     "rentals": {
@@ -600,6 +606,24 @@
           "chargePKM": 7
         }
       ]
+    },
+    "auth": {
+      "icon": "",
+      "path": "/auth",
+      "title": "Auth",
+      "component": "Auth",
+      "meta": {
+        "title": "Auth | Rhyno EV",
+        "description": "login to your Rhyno EV account.",
+        "admin": {
+          "name": "Arsalan Ansari",
+          "phone": "9568621239",
+          "email": "theansaricompany@gmail.com",
+          "password": "arsalan-ansari",
+          "order": false,
+          "image": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        }
+      }
     }
   }
 }
