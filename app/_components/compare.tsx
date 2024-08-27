@@ -18,7 +18,7 @@ export default function Compare() {
     <>
       <Header />
       <main className="space-y-4 md:space-y-12">
-        {rhynoEv.pages.vehicles.vehicleList.map((vehicle, index) => {
+        {rhynoEv.main.vehicles.vehicleList.map((vehicle, index) => {
           return (
             <section
               key={index}
@@ -91,7 +91,7 @@ export default function Compare() {
                       <DataTable
                         data={vehicle.batteryFeatures}
                         columns={getColumnDefinition(
-                          rhynoEv.pages.vehicles.tableHeaders
+                          rhynoEv.main.vehicles.tableHeaders
                         )}
                       />
                     </div>
@@ -111,11 +111,11 @@ export default function Compare() {
         <section className="mx-auto max-w-7xl space-y-4 p-3 sm:px-6 md:px-12 lg:px-24">
           <div className="space-y-4">
             <h3 className="text-3xl font-bold leading-none tracking-tighter text-neutral-600">
-              {rhynoEv.pages.vehicles.tableHeadings[0]}
+              {rhynoEv.main.vehicles.tableHeadings[0]}
             </h3>
             <DataTable
-              data={rhynoEv.pages.compare.comparison}
-              columns={getColumnDefinition(rhynoEv.pages.compare.tableHeaders)}
+              data={rhynoEv.main.compare.comparison}
+              columns={getColumnDefinition(rhynoEv.main.compare.tableHeaders)}
             />
           </div>
         </section>

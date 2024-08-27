@@ -20,7 +20,7 @@ export default function Auth() {
     let user = new Object() as any;
     const formData = new FormData(event.target as HTMLFormElement);
 
-    Object.keys(rhynoEv.pages.auth.admin).forEach(
+    Object.keys(rhynoEv.main.auth.admin).forEach(
       key => (user[key as keyof typeof user] = formData.get(key))
     );
 
@@ -31,7 +31,7 @@ export default function Auth() {
     event.preventDefault();
     const user = getUser(event);
 
-    toast(rhynoEv.pages.auth.alertSignup);
+    toast(rhynoEv.main.auth.alertSignup);
     sessionStorage.setItem('user', JSON.stringify(user));
 
     setTimeout(() => router.push(rhynoEv.nav.prebook.href), 500);
@@ -42,18 +42,18 @@ export default function Auth() {
     const user = getUser(event);
 
     if (
-      user.email === rhynoEv.pages.auth.admin.email &&
-      user.password === rhynoEv.pages.auth.admin.password
+      user.email === rhynoEv.main.auth.admin.email &&
+      user.password === rhynoEv.main.auth.admin.password
     ) {
       setTimeout(() => router.push(rhynoEv.nav.prebook.href), 500);
 
       return sessionStorage.setItem(
         'user',
-        JSON.stringify(rhynoEv.pages.auth.admin)
+        JSON.stringify(rhynoEv.main.auth.admin)
       );
     }
 
-    toast(rhynoEv.pages.auth.alertError);
+    toast(rhynoEv.main.auth.alertError);
   }
 
   return (
@@ -69,7 +69,7 @@ export default function Auth() {
                     Create your account
                   </h2>
                   <p className="text-white/90 mt-4 leading-relaxed">
-                    {rhynoEv.pages.home.tagline}
+                    {rhynoEv.main.home.tagline}
                   </p>
                 </div>
               </section>
@@ -80,7 +80,7 @@ export default function Auth() {
                       Create your account
                     </h1>
                     <p className="mt-4 leading-relaxed text-gray-500">
-                      {rhynoEv.pages.home.tagline}
+                      {rhynoEv.main.home.tagline}
                     </p>
                   </div>
                   <form
@@ -157,17 +157,17 @@ export default function Auth() {
                       <p className="text-sm text-gray-500">
                         By creating an account, you agree to our &nbsp;
                         <a
-                          href={rhynoEv.footer.websitePolicy.href}
+                          href={rhynoEv.footer.helpfulLinks.websitePolicy.href}
                           className="text-gray-700 underline"
                         >
-                          {rhynoEv.footer.websitePolicy.title}
+                          {rhynoEv.footer.helpfulLinks.websitePolicy.title}
                         </a>
                         &nbsp;and&nbsp;
                         <a
-                          href={rhynoEv.footer.refundPolicy.href}
+                          href={rhynoEv.footer.helpfulLinks.refundPolicy.href}
                           className="text-gray-700 underline"
                         >
-                          {rhynoEv.footer.refundPolicy.title}
+                          {rhynoEv.footer.helpfulLinks.refundPolicy.title}
                         </a>
                         &nbsp;.
                       </p>
@@ -197,7 +197,7 @@ export default function Auth() {
                     Login to Your Account
                   </h2>
                   <p className="text-white/90 mt-4 leading-relaxed">
-                    {rhynoEv.pages.home.tagline}
+                    {rhynoEv.main.home.tagline}
                   </p>
                 </div>
               </section>
@@ -208,7 +208,7 @@ export default function Auth() {
                       Login to Your Account
                     </h1>
                     <p className="mt-4 leading-relaxed text-gray-500">
-                      {rhynoEv.pages.home.tagline}
+                      {rhynoEv.main.home.tagline}
                     </p>
                   </div>
                   <form

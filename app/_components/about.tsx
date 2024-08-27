@@ -20,13 +20,13 @@ export default function About() {
                       <img
                         alt=""
                         className="w-full rounded-2xl"
-                        src={rhynoEv.pages.contact.people[0]}
+                        src={rhynoEv.main.contact.people[0]}
                       />
                     </div>
                     <div className="py-3 sm:py-4">
                       <img
                         alt=""
-                        src={rhynoEv.pages.contact.people[1]}
+                        src={rhynoEv.main.contact.people[1]}
                         className="w-full rounded-2xl"
                       />
                     </div>
@@ -36,12 +36,12 @@ export default function About() {
                       <img
                         alt=""
                         className="w-full rounded-2xl"
-                        src={rhynoEv.pages.contact.people[2]}
+                        src={rhynoEv.main.contact.people[2]}
                       />
                       <span className="absolute -bottom-7 -right-7 z-[-1] aspect-square w-40">
                         <img
                           alt="Background Pattern"
-                          src={rhynoEv.pages.contact.pattern}
+                          src={rhynoEv.main.contact.pattern}
                         />
                       </span>
                     </div>
@@ -51,13 +51,13 @@ export default function About() {
               <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                 <div className="mt-10 lg:mt-0">
                   <h2 className="text-dark dark:text-white mb-5 text-3xl font-bold text-neutral-700 sm:text-[40px]/[48px]">
-                    {rhynoEv.pages.home.tagline}
+                    {rhynoEv.main.home.tagline}
                   </h2>
                   <p className="text-body-color dark:text-dark-6 mb-5 text-base text-teal-600">
-                    {rhynoEv.pages.about.details.history}
+                    {rhynoEv.main.about.details.history}
                   </p>
                   <p className="text-body-color dark:text-dark-6 mb-8 text-base text-teal-600">
-                    {rhynoEv.pages.about.details.achievement}
+                    {rhynoEv.main.about.details.achievement}
                   </p>
                   <a
                     href={rhynoEv.nav.prebook.href}
