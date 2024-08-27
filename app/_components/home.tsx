@@ -1,37 +1,16 @@
 'use client';
 
-import Header from '@/_components/header';
-import Footer from '@/_components/footer';
 import { useState } from 'react';
+
+import Autoplay from 'embla-carousel-autoplay';
 import * as ShadCarousel from '@/_components/ui/carousel';
 
-import rhynoEv from '../../public/about/rhyno-ev.json';
-import { cn } from '@/_lib/utils';
-import Autoplay from 'embla-carousel-autoplay';
+import Header from '@/_components/header';
+import Footer from '@/_components/footer';
 
-type App_Vehicle = {
-  id: string;
-  name: string;
-  images: {
-    slate: string[];
-    blue: string[];
-    teal: string[];
-  };
-  colors: string;
-  description: string;
-  specs: {
-    feature: string;
-    description: string;
-  }[];
-  keyFeatures: {
-    feature: string;
-    description: string;
-  }[];
-  batteryFeatures: {
-    feature: string;
-    description: string;
-  }[];
-};
+import { cn } from '@/_lib/utils';
+
+import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Home() {
   return (
@@ -89,20 +68,19 @@ export default function Home() {
   );
 }
 
-function Vehicle({ vehicle }: { vehicle: App_Vehicle }) {
-  const [variant, setVariant] = useState('slate');
-  const images = vehicle.images[variant as keyof typeof vehicle.images];
+function Vehicle(props: { vehicle: typeof rhynoEv.pages.vehicles.vehicle }) {
+  const [variant, setVariant] = useState(rhynoEv.pages.vehicles.defaultVariant);
+  const images =
+    props.vehicle.images[variant as keyof typeof props.vehicle.images];
 
   return (
     <section className="mx-auto max-w-7xl p-3 sm:px-6 md:px-12 lg:px-24">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center">
+      <div className="mx-auto max-w-7xl">
         <div className="w-full rounded-xl">
           <div>
             <div className="relative w-full">
               <div className="animate-blob absolute -left-4 top-0 h-72 w-72 rounded-full bg-violet-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-
               <div className="animate-blob animation-delay-4000 absolute -bottom-24 right-20 h-72 w-72 rounded-full bg-fuchsia-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-
               <ShadCarousel.Carousel>
                 <ShadCarousel.CarouselContent>
                   {images.map((image, index) => {
@@ -112,9 +90,9 @@ function Vehicle({ vehicle }: { vehicle: App_Vehicle }) {
                         className="relative"
                       >
                         <img
-                          className="w-full rounded-lg object-cover object-center shadow-2xl"
                           alt="hero"
                           src={image}
+                          className="w-full rounded-lg object-cover object-center shadow-2xl"
                         />
                       </ShadCarousel.CarouselItem>
                     );
@@ -125,10 +103,10 @@ function Vehicle({ vehicle }: { vehicle: App_Vehicle }) {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow lg:pl-6">
+        <div className="mt-12 flex flex-col items-start text-left md:mb-0 lg:flex-grow">
           <div className="flex flex-col items-start text-left md:mb-0 lg:flex-grow">
             <div className="mb-4 flex gap-2">
-              {Object.keys(vehicle.images).map((color, index) => {
+              {Object.keys(props.vehicle.images).map((color, index) => {
                 return (
                   <button
                     key={index}
@@ -149,12 +127,11 @@ function Vehicle({ vehicle }: { vehicle: App_Vehicle }) {
                 );
               })}
             </div>
-
             <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
-              {vehicle.name}
+              {props.vehicle.name}
             </h1>
             <p className="mb-8 text-left text-base leading-relaxed text-gray-500">
-              {vehicle.description}
+              {props.vehicle.description}
             </p>
           </div>
         </div>

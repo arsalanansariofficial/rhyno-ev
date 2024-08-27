@@ -5,9 +5,15 @@ import { toast } from 'sonner';
 import Header from '@/_components/header';
 import Footer from '@/_components/footer';
 import { Toaster } from '@/_components/ui/sonner';
+
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Contact() {
+  function handleSubmit(event: any): void {
+    event.preventDefault();
+    toast(rhynoEv.pages.contact.successMessage);
+  }
+
   return (
     <>
       <Header />
@@ -19,7 +25,6 @@ export default function Contact() {
                 <p className="max-w-xl text-lg">
                   {rhynoEv.pages.contact.tagline}
                 </p>
-
                 <div className="mt-8 flex flex-col gap-2">
                   <a
                     href={rhynoEv.pages.contact.contactInfo.phone.href}
@@ -27,14 +32,12 @@ export default function Contact() {
                   >
                     {rhynoEv.pages.contact.contactInfo.phone.title}
                   </a>
-
                   <a
                     href={rhynoEv.pages.contact.contactInfo.email.href}
                     className="text-2xl font-bold text-slate-700"
                   >
                     {rhynoEv.pages.contact.contactInfo.email.title}
                   </a>
-
                   <address className="not-italic">
                     {rhynoEv.pages.contact.contactInfo.address.title}
                   </address>
@@ -42,26 +45,19 @@ export default function Contact() {
               </div>
 
               <div className="bg-white rounded-lg border p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form
-                  className="space-y-4"
-                  onSubmit={event => {
-                    event.preventDefault();
-                    toast(rhynoEv.pages.contact.successMessage);
-                  }}
-                >
+                <form className="space-y-4" onSubmit={handleSubmit}>
                   <div>
                     <label className="sr-only" htmlFor="name">
                       Name
                     </label>
                     <input
                       required
-                      type="text"
                       id="name"
+                      type="text"
                       placeholder="Name"
                       className="w-full rounded-lg border border-gray-200 p-3 text-sm"
                     />
                   </div>
-
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div>
                       <label className="sr-only" htmlFor="email">
@@ -69,32 +65,29 @@ export default function Contact() {
                       </label>
                       <input
                         required
-                        type="email"
                         id="email"
+                        type="email"
                         placeholder="Email address"
                         className="w-full rounded-lg border border-gray-200 p-3 text-sm"
                       />
                     </div>
-
                     <div>
                       <label className="sr-only" htmlFor="phone">
                         Phone
                       </label>
                       <input
                         required
-                        type="tel"
                         id="phone"
+                        type="tel"
                         placeholder="Phone Number"
                         className="w-full rounded-lg border border-gray-200 p-3 text-sm"
                       />
                     </div>
                   </div>
-
                   <div>
                     <label className="sr-only" htmlFor="message">
                       Message
                     </label>
-
                     <textarea
                       required
                       rows={8}
@@ -103,7 +96,6 @@ export default function Contact() {
                       className="w-full rounded-lg border border-gray-200 p-3 text-sm"
                     ></textarea>
                   </div>
-
                   <div className="mt-4">
                     <button
                       type="submit"

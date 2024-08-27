@@ -1,5 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import { type ClassValue, clsx } from 'clsx';
+
 import { ColumnDef } from '@tanstack/react-table';
 
 export function cn(...inputs: ClassValue[]) {
@@ -16,9 +17,7 @@ export function getColumnDefinition<T>(headers: string[]) {
 export function pretty(params: string) {
   return params
     .replace(/([A-Z]+)/g, ' $1')
-    .replace(/^./, function (str) {
-      return str.toUpperCase();
-    })
-    .split(' ')
-    .join(' ');
+    .replace(/^./, str => str.toUpperCase())
+    .split(String())
+    .join(String());
 }
