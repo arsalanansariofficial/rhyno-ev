@@ -81,8 +81,6 @@ function Vehicle(props: {
         <div className="w-full rounded-xl">
           <div>
             <div className="relative w-full">
-              <div className="animate-blob absolute -left-4 top-0 h-72 w-72 rounded-full bg-violet-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-              <div className="animate-blob animation-delay-4000 absolute -bottom-24 right-20 h-72 w-72 rounded-full bg-fuchsia-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
               <ShadCarousel.Carousel>
                 <ShadCarousel.CarouselContent>
                   {images.map((image, index) => {
@@ -94,7 +92,7 @@ function Vehicle(props: {
                         <img
                           alt="hero"
                           src={image}
-                          className="w-full rounded-lg object-cover object-center shadow-2xl"
+                          className="w-full rounded-lg object-cover object-center"
                         />
                       </ShadCarousel.CarouselItem>
                     );
@@ -122,9 +120,9 @@ function Vehicle(props: {
                       color === variant && 'border-2 border-sky-800'
                     )}
                   >
-                    <span className="hidden bg-slate-500"></span>
+                    <span className="bg-black-500 hidden"></span>
                     <span className="hidden bg-blue-500"></span>
-                    <span className="hidden bg-teal-500"></span>
+                    <span className="hidden bg-gray-500"></span>
                   </button>
                 );
               })}
