@@ -629,15 +629,15 @@
     },
     "helpfulLinks": {
       "privacyPolicy": {
-        "href": "/about/privacy-policy.pdf",
+        "href": "/privacy-policy",
         "title": "Privacy policy"
       },
       "refundPolicy": {
-        "href": "/about/refund-policy.pdf",
+        "href": "/refund-policy",
         "title": "Refund policy"
       },
       "websitePolicy": {
-        "href": "/about/website-policy.pdf",
+        "href": "/website-policy",
         "title": "Website policy"
       }
     }

@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -93,12 +95,12 @@ export default function Compare() {
                         )}
                       />
                     </div>
-                    <a
+                    <Link
                       href={rhynoEv.nav.prebook.href}
                       className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
                     >
                       {rhynoEv.nav.prebook.title}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

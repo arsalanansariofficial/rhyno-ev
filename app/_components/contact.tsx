@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { toast } from 'sonner';
 
 import Header from '@/_components/header';
@@ -26,18 +27,18 @@ export default function Contact() {
                   {rhynoEv.main.contact.tagline}
                 </p>
                 <div className="mt-8 flex flex-col gap-2">
-                  <a
+                  <Link
                     href={rhynoEv.footer.contactUs.phone.href}
                     className="text-2xl font-bold text-pink-600"
                   >
                     {rhynoEv.footer.contactUs.phone.title}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={rhynoEv.footer.contactUs.email.href}
                     className="text-2xl font-bold text-slate-700"
                   >
                     {rhynoEv.footer.contactUs.email.title}
-                  </a>
+                  </Link>
                   <address className="not-italic">
                     {rhynoEv.footer.contactUs.address.title}
                   </address>
@@ -78,7 +79,11 @@ export default function Contact() {
                       <input
                         required
                         id="phone"
-                        type="tel"
+                        type="number"
+                        minLength={10}
+                        maxLength={10}
+                        min={1000000000}
+                        max={9999999999}
                         placeholder="Phone Number"
                         className="w-full rounded-lg border border-gray-200 p-3 text-sm"
                       />

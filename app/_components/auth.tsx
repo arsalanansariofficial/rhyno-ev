@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 import { toast, Toaster } from 'sonner';
@@ -156,19 +158,19 @@ export default function Auth() {
                     <div className="col-span-6">
                       <p className="text-sm text-gray-500">
                         By creating an account, you agree to our &nbsp;
-                        <a
+                        <Link
                           href={rhynoEv.footer.helpfulLinks.websitePolicy.href}
                           className="text-gray-700 underline"
                         >
                           {rhynoEv.footer.helpfulLinks.websitePolicy.title}
-                        </a>
+                        </Link>
                         &nbsp;and&nbsp;
-                        <a
+                        <Link
                           href={rhynoEv.footer.helpfulLinks.refundPolicy.href}
                           className="text-gray-700 underline"
                         >
                           {rhynoEv.footer.helpfulLinks.refundPolicy.title}
-                        </a>
+                        </Link>
                         &nbsp;.
                       </p>
                     </div>

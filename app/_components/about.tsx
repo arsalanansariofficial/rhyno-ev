@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import Footer from '@/_components/footer';
 import Header from '@/_components/header';
@@ -59,12 +60,12 @@ export default function About() {
                   <p className="text-body-color dark:text-dark-6 mb-8 text-base text-teal-600">
                     {rhynoEv.main.about.details.achievement}
                   </p>
-                  <a
+                  <Link
                     href={rhynoEv.nav.prebook.href}
                     className="inline-flex items-center justify-center rounded-md border border-transparent bg-primary bg-teal-600 px-7 py-3 text-center text-base font-medium text-black-100 hover:bg-opacity-90"
                   >
                     {rhynoEv.nav.prebook.title}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
