@@ -1,7 +1,8 @@
 {
+  "title": "Rhyno EV",
   "nav": {
     "home": {
-      "icon": "",
+      "icon": "/img/icons/logo.svg",
       "href": "/",
       "title": "Home"
     },
@@ -15,10 +16,10 @@
       "href": "/products",
       "title": "Products",
       "subMenu": [
-        { "title": "SE03" },
-        { "title": "SE03 Max" },
-        { "title": "SE03 Lite" },
-        { "title": "Compare all" }
+        { "title": "SE03", "href": "/products/se03" },
+        { "title": "SE03 Max", "href": "/products/se03-max" },
+        { "title": "SE03 Lite", "href": "/products/se03-lite" },
+        { "title": "Compare all", "href": "/products/compare" }
       ]
     },
     "contact": {
@@ -32,12 +33,12 @@
       "title": "Pre-book Now"
     },
     "instagram": {
-      "icon": "",
+      "icon": "/img/icons/icon-instagram.svg",
       "href": "https://instagram.com/",
       "title": "Instagram"
     },
     "linkedIn": {
-      "icon": "",
+      "icon": "/img/icons/icon-pinterest.svg",
       "href": "https://linkedin.com/",
       "title": "Linked In"
     }
