@@ -1,8 +1,7 @@
-'use client';
-
 import { toast } from 'sonner';
 
 import Header from '@/_components/header';
+import { Toaster } from '@/_components/ui/sonner';
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Contact() {
@@ -19,11 +18,17 @@ export default function Contact() {
                 </p>
 
                 <div className="mt-8 flex flex-col gap-2">
-                  <a href="#" className="text-2xl font-bold text-pink-600">
+                  <a
+                    href={rhynoEv.pages.contact.contactInfo.email}
+                    className="text-2xl font-bold text-pink-600"
+                  >
                     {rhynoEv.pages.contact.contactInfo.phone}
                   </a>
 
-                  <a href="#" className="text-2xl font-bold text-slate-700">
+                  <a
+                    href={rhynoEv.pages.contact.contactInfo.email}
+                    className="text-2xl font-bold text-slate-700"
+                  >
                     {rhynoEv.pages.contact.contactInfo.email}
                   </a>
 
@@ -35,7 +40,6 @@ export default function Contact() {
 
               <div className="bg-white rounded-lg border p-8 shadow-lg lg:col-span-3 lg:p-12">
                 <form
-                  action="#"
                   className="space-y-4"
                   onSubmit={event => {
                     event.preventDefault();
@@ -111,6 +115,7 @@ export default function Contact() {
           </div>
         </section>
       </main>
+      <Toaster />
     </>
   );
 }

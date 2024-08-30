@@ -20,7 +20,7 @@ export default function Header() {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-4">
-            <a className="block text-teal-600" href="/">
+            <a className="block text-teal-600" href={rhynoEv.nav.home.href}>
               <span className="sr-only">{rhynoEv.nav.home.title}</span>
               <svg
                 fill="none"
@@ -54,7 +54,7 @@ export default function Header() {
             <ul className="hidden items-center gap-6 text-sm md:flex">
               <li>
                 <a
-                  href="#"
+                  href={rhynoEv.nav.home.href}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.home.title}
@@ -62,7 +62,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={rhynoEv.nav.about.href}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.about.title}
@@ -73,7 +73,9 @@ export default function Header() {
                   <Nav.NavigationMenuList>
                     <Nav.NavigationMenuItem>
                       <Nav.NavigationMenuTrigger className="p-0 text-gray-500 transition hover:text-gray-500/75">
-                        {rhynoEv.nav.products.title}
+                        <a href={rhynoEv.nav.products.href}>
+                          {rhynoEv.nav.products.title}
+                        </a>
                       </Nav.NavigationMenuTrigger>
                       <Nav.NavigationMenuContent>
                         <ul className="min-w-max space-y-2 p-2">
@@ -81,7 +83,10 @@ export default function Header() {
                             (menuItem, index) => {
                               return (
                                 <Nav.NavigationMenuLink key={index} asChild>
-                                  <a className="block select-none space-y-1 rounded-md p-3 leading-none text-gray-500 no-underline outline-none hover:bg-accent hover:text-gray-500/75 focus:bg-accent focus:text-accent-foreground">
+                                  <a
+                                    href={menuItem.href}
+                                    className="block select-none space-y-1 rounded-md p-3 leading-none text-gray-500 no-underline outline-none hover:bg-accent hover:text-gray-500/75 focus:bg-accent focus:text-accent-foreground"
+                                  >
                                     <div className="text-sm font-medium capitalize leading-none">
                                       {menuItem.title}
                                     </div>
@@ -98,7 +103,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={rhynoEv.nav.contact.href}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.contact.title}
@@ -109,7 +114,7 @@ export default function Header() {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  href="#"
+                  href={rhynoEv.nav.prebook.href}
                   className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
                 >
                   {rhynoEv.nav.prebook.title}
