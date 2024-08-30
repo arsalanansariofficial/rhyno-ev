@@ -230,7 +230,7 @@ export default function Prebook() {
         )}
 
         {hasOrder && (
-          <section className="rounded-3xl border shadow-xl">
+          <section className="rounded-3xl">
             <div className="space-y-4 p-8 text-center sm:p-12">
               <span className="text-3xl font-semibold uppercase tracking-widest">
                 🎉
