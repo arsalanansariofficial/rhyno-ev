@@ -2,43 +2,43 @@
   "title": "Rhyno EV",
   "nav": {
     "home": {
-      "icon": "/img/icons/logo.svg",
-      "href": "/",
+      "icon": "../../public/img/icons/logo.svg",
+      "href": "../../index.html",
       "title": "Home"
     },
     "about": {
       "icon": "",
-      "href": "/about-us",
+      "href": "../about/index.html",
       "title": "About us"
     },
     "products": {
       "icon": "",
-      "href": "/products",
+      "href": "../products/index.html",
       "title": "Products",
       "subMenu": [
-        { "title": "SE03", "href": "/products/se03" },
-        { "title": "SE03 Max", "href": "/products/se03-max" },
-        { "title": "SE03 Lite", "href": "/products/se03-lite" },
-        { "title": "Compare all", "href": "/products/compare" }
+        { "title": "SE03", "href": "/products/se03/index.html" },
+        { "title": "SE03 Max", "href": "/products/se03-max/index.html" },
+        { "title": "SE03 Lite", "href": "/products/se03-lite/index.html" },
+        { "title": "Compare all", "href": "/products/compare/index.html" }
       ]
     },
     "contact": {
       "icon": "",
-      "href": "/contact-us",
+      "href": "../contact/index.html",
       "title": "Contact us"
     },
     "prebook": {
       "icon": "",
-      "href": "/prebook",
+      "href": "../prebook/index.html",
       "title": "Pre-book Now"
     },
     "instagram": {
-      "icon": "/img/icons/icon-instagram.svg",
+      "icon": "../../public/img/icons/icon-instagram.svg",
       "href": "https://instagram.com/",
       "title": "Instagram"
     },
     "linkedIn": {
-      "icon": "/img/icons/icon-pinterest.svg",
+      "icon": "../../public/img/icons/icon-pinterest.svg",
       "href": "https://linkedin.com/",
       "title": "Linked In"
     }
@@ -46,32 +46,32 @@
   "footer": {
     "rentals": {
       "icon": "",
-      "href": "/rentals",
+      "href": "../rentals/index.html",
       "title": "Rentals"
     },
     "products": {
       "icon": "",
-      "href": "/products",
+      "href": "../products/index.html",
       "title": "Products"
     },
     "contact": {
       "icon": "",
-      "href": "/contact-us",
+      "href": "../contact/index.html",
       "title": "Contact us"
     },
     "privacyPolicy": {
       "icon": "",
-      "href": "/contact-us",
+      "href": "../../public/about/privacy-policy.pdf",
       "title": "Privacy policy"
     },
     "refundPolicy": {
       "icon": "",
-      "href": "/contact-us",
+      "href": "../../public/about/refund-policy.pdf",
       "title": "Refund policy"
     },
     "websitePolicy": {
       "icon": "",
-      "href": "/contact-us",
+      "href": "../../public/about/website-policy.pdf",
       "title": "Website policy"
     },
     "career": {
@@ -93,7 +93,7 @@
   "pages": {
     "home": {
       "icon": "",
-      "path": "/",
+      "path": "../../index.html",
       "title": "Home",
       "component": "Home",
       "tagline": "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style.",
@@ -122,7 +122,7 @@
     },
     "about": {
       "icon": "",
-      "path": "/about-us",
+      "path": "../about/index.html",
       "title": "About us",
       "component": "About",
       "meta": {
@@ -136,7 +136,7 @@
     },
     "products": {
       "icon": "",
-      "path": "/products",
+      "path": "../products/index.html",
       "title": "Products",
       "component": "Products",
       "meta": {
@@ -313,7 +313,7 @@
     },
     "contact": {
       "icon": "",
-      "path": "/contact-us",
+      "path": "../contact/index.html",
       "title": "Contact us",
       "component": "Contact us",
       "meta": {
@@ -339,7 +339,7 @@
     },
     "prebook": {
       "icon": "",
-      "path": "/prebook",
+      "path": "../prebook/index.html",
       "title": "Pre-book Now",
       "component": "Pre-book Now",
       "meta": {
