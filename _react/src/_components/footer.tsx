@@ -3,7 +3,7 @@
 import * as fa from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import rhynoEv from '../../public/about/rhyno-ev.json';
+import rhynoEv from '../../../public/about/rhyno-ev.json';
 
 export default function Footer() {
   return (
