@@ -6,8 +6,8 @@ import * as Nav from '@/_components/ui/navigation-menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import rhynoEv from '../../../public/about/rhyno-ev.json';
-import user from '../../../public/about/arsalan-ansari.json';
+import rhynoEv from '../../public/about/rhyno-ev.json';
+import user from '../../public/about/arsalan-ansari.json';
 
 export default function Header() {
   return (
@@ -68,13 +68,13 @@ export default function Header() {
                   <Nav.NavigationMenuList>
                     <Nav.NavigationMenuItem>
                       <Nav.NavigationMenuTrigger className="p-0 text-gray-500 transition hover:text-gray-500/75">
-                        <a href={rhynoEv.nav.products.href}>
-                          {rhynoEv.nav.products.title}
+                        <a href={rhynoEv.nav.vehicles.href}>
+                          {rhynoEv.nav.vehicles.title}
                         </a>
                       </Nav.NavigationMenuTrigger>
                       <Nav.NavigationMenuContent>
                         <ul className="min-w-max space-y-2 p-2">
-                          {rhynoEv.nav.products.subMenu.map(
+                          {rhynoEv.nav.vehicles.subMenu.map(
                             (menuItem, index) => {
                               return (
                                 <Nav.NavigationMenuLink key={index} asChild>
@@ -163,7 +163,7 @@ export default function Header() {
                             <details className="group [&_summary::-webkit-details-marker]:hidden">
                               <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                                 <span className="text-sm font-medium">
-                                  {rhynoEv.nav.products.title}
+                                  {rhynoEv.nav.vehicles.title}
                                 </span>
 
                                 <span className="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -183,7 +183,7 @@ export default function Header() {
                               </summary>
 
                               <ul className="mt-2 space-y-1 px-4">
-                                {rhynoEv.nav.products.subMenu.map(
+                                {rhynoEv.nav.vehicles.subMenu.map(
                                   (menuItem, index) => {
                                     return (
                                       <li key={index}>

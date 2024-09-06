@@ -11,7 +11,7 @@
     "prefix": "",
     "cssVariables": true,
     "baseColor": "slate",
-    "css": "src/globals.css",
+    "css": "app/globals.css",
     "config": "tailwind.config.js"
   }
 }

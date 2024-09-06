@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Rhyno EV by Arsalan Ansari</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="_static/globals.css" data-precedence="next" />
+    <title>Home | Rhyno EV</title>
     <meta
       name="description"
-      content="Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style."
+      content="Welcome to Rhyno EV, the leading electric vehicle company in the United States."
     />
-    <link type="image/png" rel="icon" href="public/img/icons/rhyno-ev.png" />
-    <link rel="stylesheet" href="app/style.css" />
-    <script src="app/main.js" defer></script>
+    <link rel="icon" href="icon.png" type="image/png" sizes="1770x787" />
+    <script src="_static/main.js" defer></script>
   </head>
   <body>
     <div id="root" class="min-h-screen bg-background font-poppins antialiased">
@@ -18,7 +18,7 @@
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div class="flex h-16 items-center justify-between">
             <div class="flex-1 md:flex md:items-center md:gap-4">
-              <a class="block text-teal-600" href="/"
+              <a class="block text-teal-600" href="index.html"
                 ><span class="sr-only">Home</span
                 ><svg
                   fill="none"
@@ -65,22 +65,21 @@
                   <path
                     fill="currentColor"
                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                  ></path>
-                </svg>
-              </a>
+                  ></path></svg
+              ></a>
             </div>
             <div class="md:flex md:items-center md:gap-12">
               <ul class="hidden items-center gap-6 text-sm md:flex">
                 <li>
                   <a
-                    href="/"
+                    href="index.html"
                     class="text-gray-500 transition hover:text-gray-500/75"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    href="/about-us"
+                    href="about.html"
                     class="text-gray-500 transition hover:text-gray-500/75"
                     >About us</a
                   >
@@ -107,7 +106,7 @@
                             class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background p-0 text-sm font-medium text-gray-500 transition hover:bg-accent hover:text-gray-500/75 focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                             data-radix-collection-item=""
                           >
-                            <a href="/products">Products</a>
+                            <a href="vehicles.html">vehicles</a>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -134,7 +133,7 @@
                 </li>
                 <li>
                   <a
-                    href="/contact-us"
+                    href="contact.html"
                     class="text-gray-500 transition hover:text-gray-500/75"
                     >Contact us</a
                   >
@@ -143,7 +142,7 @@
               <div class="flex items-center gap-4">
                 <div class="sm:flex sm:gap-4">
                   <a
-                    href="/prebook"
+                    href="prebook.html"
                     class="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
                     >Pre-book Now</a
                   >
@@ -176,12 +175,14 @@
           </div>
         </div>
       </header>
-      <h1 class="font-poppins text-3xl">Home Page</h1>
-      <button
-        class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-      >
-        Click Here
-      </button>
+      <div class="space-y-4 p-4">
+        <h1 class="font-poppins text-3xl">Home Page</h1>
+        <button
+          class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+        >
+          Click Here
+        </button>
+      </div>
     </div>
   </body>
 </html>

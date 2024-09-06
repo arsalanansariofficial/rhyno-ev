@@ -1,44 +1,45 @@
 {
   "title": "Rhyno EV",
+  "logo": "img/icons/rhyno-ev.png",
   "nav": {
     "home": {
-      "icon": "../../public/img/icons/logo.svg",
-      "href": "../../index.html",
+      "icon": "img/icons/logo.svg",
+      "href": "index.html",
       "title": "Home"
     },
     "about": {
       "icon": "",
-      "href": "../about/index.html",
+      "href": "about.html",
       "title": "About us"
     },
-    "products": {
+    "vehicles": {
       "icon": "",
-      "href": "../products/index.html",
-      "title": "Products",
+      "href": "vehicles.html",
+      "title": "vehicles",
       "subMenu": [
-        { "title": "SE03", "href": "/products/se03/index.html" },
-        { "title": "SE03 Max", "href": "/products/se03-max/index.html" },
-        { "title": "SE03 Lite", "href": "/products/se03-lite/index.html" },
-        { "title": "Compare all", "href": "/products/compare/index.html" }
+        { "title": "SE03", "href": "se-03.html" },
+        { "title": "SE03 Max", "href": "se-03-max.html" },
+        { "title": "SE03 Lite", "href": "se-03-lite.html" },
+        { "title": "Compare all", "href": "compare.html" }
       ]
     },
     "contact": {
       "icon": "",
-      "href": "../contact/index.html",
+      "href": "contact.html",
       "title": "Contact us"
     },
     "prebook": {
       "icon": "",
-      "href": "../prebook/index.html",
+      "href": "prebook.html",
       "title": "Pre-book Now"
     },
     "instagram": {
-      "icon": "../../public/img/icons/icon-instagram.svg",
+      "icon": "img/icons/icon-instagram.svg",
       "href": "https://instagram.com/",
       "title": "Instagram"
     },
     "linkedIn": {
-      "icon": "../../public/img/icons/icon-pinterest.svg",
+      "icon": "img/icons/icon-pinterest.svg",
       "href": "https://linkedin.com/",
       "title": "Linked In"
     }
@@ -46,32 +47,32 @@
   "footer": {
     "rentals": {
       "icon": "",
-      "href": "../rentals/index.html",
+      "href": "rentals.html",
       "title": "Rentals"
     },
-    "products": {
+    "vehicles": {
       "icon": "",
-      "href": "../products/index.html",
-      "title": "Products"
+      "href": "vehicles.html",
+      "title": "vehicles"
     },
     "contact": {
       "icon": "",
-      "href": "../contact/index.html",
+      "href": "contact.html",
       "title": "Contact us"
     },
     "privacyPolicy": {
       "icon": "",
-      "href": "../../public/about/privacy-policy.pdf",
+      "href": "about/privacy-policy.pdf",
       "title": "Privacy policy"
     },
     "refundPolicy": {
       "icon": "",
-      "href": "../../public/about/refund-policy.pdf",
+      "href": "about/refund-policy.pdf",
       "title": "Refund policy"
     },
     "websitePolicy": {
       "icon": "",
-      "href": "../../public/about/website-policy.pdf",
+      "href": "about/website-policy.pdf",
       "title": "Website policy"
     },
     "career": {
@@ -81,7 +82,7 @@
     },
     "instagram": {
       "icon": "",
-      "href": "/https://instagram.com",
+      "href": "https://instagram.com",
       "title": "Instagram"
     },
     "linkedIn": {
@@ -93,7 +94,7 @@
   "pages": {
     "home": {
       "icon": "",
-      "path": "../../index.html",
+      "path": "index.html",
       "title": "Home",
       "component": "Home",
       "tagline": "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style.",
@@ -122,7 +123,7 @@
     },
     "about": {
       "icon": "",
-      "path": "../about/index.html",
+      "path": "about",
       "title": "About us",
       "component": "About",
       "meta": {
@@ -134,19 +135,20 @@
         "achievement": "With our first product, we've taken a bold step to create something more than just a vehicle; it's a unique experience of elegance, comfort and style, addressing the pitfalls of conventional electric scooters. Our design prioritizes safety, eliminating concerns of fires and ensuring a longer battery lifespan with our battery technology. Perfectly suited for fleet operators, especially in tourist-centric locations like Goa, our rugged yet aesthetically appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new era in sustainable and dependable electric transportation."
       }
     },
-    "products": {
+    "vehicles": {
       "icon": "",
-      "path": "../products/index.html",
-      "title": "Products",
-      "component": "Products",
+      "path": "vehicles",
+      "title": "vehicles",
+      "component": "vehicles",
       "meta": {
-        "title": "Products | Rhyno EV",
-        "description": "Products that have less friction than ever before."
+        "title": "vehicles | Rhyno EV",
+        "description": "vehicles that have less friction than ever before."
       },
-      "vehicles": [
+      "vehicleList": [
         {
+          "id": "se-03-lite",
           "name": "SE03 Lite",
-          "image": "/img/vehicles/se-03.png",
+          "image": "img/vehicles/se-03.png",
           "colors": "",
           "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -188,18 +190,40 @@
             }
           ],
           "keyFeatures": [
-            "Fire-Safe Advanced LFP Battery",
-            "Range Prediction",
-            "Comfortable Ride",
-            "And Safe"
+            {
+              "title": "Fire-Safe Advanced LFP Battery",
+              "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
+            },
+            {
+              "title": "Range Prediction",
+              "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
+            },
+            {
+              "title": "Comfortable Ride",
+              "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
+            },
+            {
+              "title": "And Safe",
+              "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
+            }
           ],
           "batteryFeatures": [
-            "LFP with 1500 cycles",
-            "Active Balancing",
-            "Waterproof (IP67)"
+            {
+              "title": "LFP with 1500 cycles",
+              "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
+            },
+            {
+              "title": "Active Balancing",
+              "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
+            },
+            {
+              "title": "Waterproof (IP67)",
+              "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
+            }
           ]
         },
         {
+          "id": "se-03",
           "name": "SE03",
           "image": "",
           "colors": "",
@@ -243,18 +267,40 @@
             }
           ],
           "keyFeatures": [
-            "Fire-safe battery",
-            "Range prediction",
-            "Comfortable ride",
-            "Stable and safe Specification"
+            {
+              "title": "Fire-Safe Advanced LFP Battery",
+              "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
+            },
+            {
+              "title": "Range Prediction",
+              "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
+            },
+            {
+              "title": "Comfortable Ride",
+              "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
+            },
+            {
+              "title": "Stable and safe Specification",
+              "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
+            }
           ],
           "batteryFeatures": [
-            "LFP with 1500 cycles",
-            "Active Balancing",
-            "Waterproof (IP67)"
+            {
+              "title": "LFP with 1500 cycles",
+              "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
+            },
+            {
+              "title": "Active Balancing",
+              "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
+            },
+            {
+              "title": "Waterproof (IP67)",
+              "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
+            }
           ]
         },
         {
+          "id": "se-03-max",
           "name": "SE03 Max",
           "image": "",
           "colors": "",
@@ -298,22 +344,43 @@
             }
           ],
           "keyFeatures": [
-            "Fire-safe battery",
-            "Range prediction",
-            "Comfortable ride",
-            "Stable & Safe"
+            {
+              "title": "Fire-Safe Advanced LFP Battery",
+              "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
+            },
+            {
+              "title": "Range Prediction",
+              "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
+            },
+            {
+              "title": "Comfortable Ride",
+              "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
+            },
+            {
+              "title": "Stable and Safe",
+              "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
+            }
           ],
           "batteryFeatures": [
-            "LFP with 1500 cycles",
-            "Active Balancing",
-            "Waterproof (IP67)"
+            {
+              "title": "LFP with 1500 cycles",
+              "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
+            },
+            {
+              "title": "Active Balancing",
+              "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
+            },
+            {
+              "title": "Waterproof (IP67)",
+              "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
+            }
           ]
         }
       ]
     },
     "contact": {
       "icon": "",
-      "path": "../contact/index.html",
+      "path": "contact",
       "title": "Contact us",
       "component": "Contact us",
       "meta": {
@@ -339,7 +406,7 @@
     },
     "prebook": {
       "icon": "",
-      "path": "../prebook/index.html",
+      "path": "prebook",
       "title": "Pre-book Now",
       "component": "Pre-book Now",
       "meta": {

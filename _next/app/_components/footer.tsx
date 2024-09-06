@@ -3,7 +3,7 @@
 import * as fa from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import rhynoEv from '../../../public/about/rhyno-ev.json';
+import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Footer() {
   return (
@@ -93,10 +93,10 @@ export default function Footer() {
 
                 <li>
                   <a
-                    href={rhynoEv.footer.products.href}
+                    href={rhynoEv.footer.vehicles.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.products.title}
+                    {rhynoEv.footer.vehicles.title}
                   </a>
                 </li>
               </ul>
