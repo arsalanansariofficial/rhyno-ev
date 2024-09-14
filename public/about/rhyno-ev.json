@@ -145,6 +145,7 @@
         "description": "vehicles that have less friction than ever before."
       },
       "tableHeaders": ["feature", "description"],
+      "tableHeadings": ["Specifications", "Key Features", "Battery"],
       "vehicleList": [
         {
           "id": "gtx-lite",

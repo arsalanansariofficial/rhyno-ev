@@ -51,9 +51,8 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
               </div>
             </div>
             <div className="mb-16 mt-12 flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow lg:pl-6">
-              <div className="flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:flex-grow">
-                <div className="mb-4 flex w-1/3 gap-2">
-                  {/* <span className='hidden bg-slate-500 bg-blue-500 bg-teal-500'></span> */}
+              <div className="flex flex-col items-start text-left md:mb-0 lg:w-1/2-- lg:flex-grow">
+                <div className="mb-4 flex w-1/3-- gap-2">
                   {Object.keys(vehicle.images).map((color, index) => {
                     return (
                       <button
@@ -172,7 +171,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
         <section className="mx-auto max-w-7xl p-3 sm:px-6 md:px-12 lg:px-24">
           <div className="mb-8 space-y-8">
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
-              Specifications
+              {rhynoEv.pages.vehicles.tableHeadings[0]}
             </h2>
             <DataTable
               columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
@@ -182,7 +181,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
 
           <div className="mb-8 space-y-8">
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
-              {pretty(Object.keys(vehicle).at(-1) as string)}
+              {rhynoEv.pages.vehicles.tableHeadings[2]}
             </h2>
             <DataTable
               columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
@@ -194,7 +193,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
             href={rhynoEv.nav.prebook.href}
             className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
           >
-            Buy Now
+            {rhynoEv.nav.prebook.title}
           </a>
         </section>
       </main>
