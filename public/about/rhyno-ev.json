@@ -571,26 +571,33 @@
       "icon": "",
       "path": "/rentals",
       "title": "Rentals",
-      "component": "Pre-book Now",
+      "component": "Rentals",
       "meta": {
         "title": "Rentals | Rhyno EV",
-        "description": "Rent rhyno EV's for a short ride."
+        "description": "Rent rhyno EV's for a short ride.",
+        "headings": ["Our Plans"],
+        "info": [
+          "Discover the joy of electric scooters without the need for a lengthy purchase process.",
+          "Rent Rhyno EV's, and experience the freedom of mobility without the commitment of ownership.",
+          "With our flexible rental options, you can enjoy the convenience of a scooter without the hassle of a long-term lease or purchase."
+        ]
       },
+      "tableHeaders": ["name", "baseCharge", "chargePKM"],
       "pricing": [
         {
-          "chargePKM": 3,
+          "name": "GTX LITE",
           "baseCharge": 10,
-          "name": "GTX LITE"
+          "chargePKM": 3
         },
         {
-          "chargePKM": 5,
+          "name": "GTX",
           "baseCharge": 10,
-          "name": "GTX"
+          "chargePKM": 5
         },
         {
-          "chargePKM": 7,
+          "name": "GTX MAX",
           "baseCharge": 10,
-          "name": "GTX MAX"
+          "chargePKM": 7
         }
       ]
     }
