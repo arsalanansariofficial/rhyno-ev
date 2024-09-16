@@ -30,7 +30,7 @@
     },
     "prebook": {
       "icon": "",
-      "href": "prebook.html",
+      "href": "/prebook",
       "title": "Pre-book Now"
     },
     "instagram": {
@@ -561,7 +561,7 @@
       "icon": "",
       "path": "prebook",
       "title": "Pre-book Now",
-      "component": "Pre-book Now",
+      "component": "Prebook",
       "meta": {
         "title": "Prebook, Rhyno EV",
         "description": "Book your vehicle to put yourself infront of the queue."

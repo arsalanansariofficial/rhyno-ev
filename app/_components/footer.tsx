@@ -25,7 +25,7 @@ export default function Footer() {
               </svg>
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+            <p className="mt-6 text-center leading-relaxed text-gray-500 sm:max-w-md sm:text-left">
               {rhynoEv.pages.home.tagline}
             </p>
 
