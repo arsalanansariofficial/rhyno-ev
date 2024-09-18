@@ -1,51 +1,74 @@
+
 # 🎉 Rhyno EV
 
-Electronic Automobile Company where users can see details about their favorite automobile based on **Next JS & React JS** created by Arsalan Ansari.
+Let's Elevate Your Ride Experience With Rhyno.
 
-## 💻 Pre Requisites
 
-- `Node.js` version `21` or `greater`.
+## Acknowledgements
 
-## 🛒 Dependencies used by the project
+ - [Tailwind CSS](https://tailwindcss.com)
+ - [Shad CN](https://ui.shadcn.com)
+ - [Hyper UI](https://hyperui.dev)
+ - [Wicked Block](https://wickedblocks.dev)
+ - [Daily Dev](https://daily.dev)
+ - [Next JS](https://nextjs.org)
+ - [React JS](https://react.dev)
+## Pre-requisites
 
-1.  **clsx**.
-2.  **next**.
-3.  **react**.
-4.  **react-dom**.
-5.  **tailwind-merge**.
-6.  **tailwindcss-animate**.
-7.  **@radix-ui/react-icons**.
-8.  **class-variance-authority**.
+  Node.js version 21 or greater.
+## Run Locally
 
-## 🛒 Dev Dependencies used by the project
+Clone the project
 
-1.  **sharp**.
-2.  **eslint**.
-3.  **postcss**.
-4.  **typescript**.
-5.  **tailwindcss**.
-6.  **@types/node**.
-7.  **@types/react**.
-8.  **@types/react-dom**.
-9.  **eslint-config-next**.
-10. **prettier-plugin-tailwindcss**.
+```bash
+  git clone https://github.com/arsalanansariofficial/rhyno-ev.git
+```
 
-## 🚀 Available scripts
+Go to the project directory
 
-1.  `npm run dev` for running the application in local environment.
+```bash
+  cd rhyno-ev
+```
 
-2.  `npm run build` for building the application for production environment.
+Install dependencies
 
-3.  `npm run start` for running the application in production environment.
+```bash
+  npm i
+```
 
-4.  `npm run lint` for using eslint.
+Start the dev server
 
-## ✈️ Required environment variables
+```bash
+  npm run dev
+```
 
-- Specify any environment variables in `.env` not uploaded to github.
 
-## 🧑‍💻 Author
+## Available Scripts
 
-- Resume [Arsalan Ansari](https://arsalanansariofficial.github.io/arsalanansariofficial)
+  1.  `npm run dev` for running the application in local environment.
 
-- Website [The Ansari Company](https://arsalanansariofficial.github.io/the-ansari-company)
+  2.  `npm run build` for building the application for production environment.
+
+  3.  `npm start` for running the application in production environment.
+
+  4.  `npm run lint` for using eslint.
+## Environment Variables
+
+Currently this application does not require any environment variables.
+
+
+## Lessons Learned
+
+I have learned a lot while building this application. Major challenge that I faced was hosting.
+
+I have used Next JS and like any other JavaScript framework it does require a server in order to host but I wanted to host the application as completely static because I did not require any server side code that needs to be executed or user authentication.
+
+While finding a solution for that I kept reading the documentation and some research using AI then I came accross a solution that further needs to be modified which was next export script, I did change my confguration for a while and did some minor tweaks and it worked for me.
+
+
+## Author
+
+- [Arsalan Ansari](https://arsalanansariofficial.github.io/arsalanansariofficial)
+
+- [The Ansari Company](https://arsalanansariofficial.github.io/the-ansari-company)
+
