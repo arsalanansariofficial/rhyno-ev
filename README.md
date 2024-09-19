@@ -1,21 +1,21 @@
-
 # 🎉 Rhyno EV
 
 Let's Elevate Your Ride Experience With Rhyno.
 
-
 ## Acknowledgements
 
- - [Tailwind CSS](https://tailwindcss.com)
- - [Shad CN](https://ui.shadcn.com)
- - [Hyper UI](https://hyperui.dev)
- - [Wicked Block](https://wickedblocks.dev)
- - [Daily Dev](https://daily.dev)
- - [Next JS](https://nextjs.org)
- - [React JS](https://react.dev)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Shad CN](https://ui.shadcn.com)
+- [Hyper UI](https://hyperui.dev)
+- [Wicked Block](https://wickedblocks.dev)
+- [Daily Dev](https://daily.dev)
+- [Next JS](https://nextjs.org)
+- [React JS](https://react.dev)
+
 ## Pre-requisites
 
-  Node.js version 21 or greater.
+Node.js version 21 or greater.
+
 ## Run Locally
 
 Clone the project
@@ -42,20 +42,19 @@ Start the dev server
   npm run dev
 ```
 
-
 ## Available Scripts
 
-  1.  `npm run dev` for running the application in local environment.
+1.  `npm run dev` for running the application in local environment.
 
-  2.  `npm run build` for building the application for production environment.
+2.  `npm run build` for building the application for production environment.
 
-  3.  `npm start` for running the application in production environment.
+3.  `npm start` for running the application in production environment.
 
-  4.  `npm run lint` for using eslint.
+4.  `npm run lint` for using eslint.
+
 ## Environment Variables
 
 Currently this application does not require any environment variables.
-
 
 ## Lessons Learned
 
@@ -65,10 +64,8 @@ I have used Next JS and like any other JavaScript framework it does require a se
 
 While finding a solution for that I kept reading the documentation and some research using AI then I came accross a solution that further needs to be modified which was next export script, I did change my confguration for a while and did some minor tweaks and it worked for me.
 
-
 ## Author
 
 - [Arsalan Ansari](https://arsalanansariofficial.github.io/arsalanansariofficial)
 
 - [The Ansari Company](https://arsalanansariofficial.github.io/the-ansari-company)
-

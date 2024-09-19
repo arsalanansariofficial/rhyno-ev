@@ -2,7 +2,7 @@
   "name": "rhyno-ev",
   "version": "0.1.0",
   "private": true,
-  "description": "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style.",
+  "description": "Let's Elevate Your Ride Experience With Rhyno.",
   "author": "Arsalan Ansari",
   "scripts": {
     "build": "next build",

@@ -149,8 +149,110 @@
         "title": "vehicles, Rhyno EV",
         "description": "vehicles that have less friction than ever before."
       },
+      "defaultVariant": "slate",
       "tableHeaders": ["feature", "description"],
       "tableHeadings": ["Specifications", "Key Features", "Battery"],
+      "vehicle": {
+        "id": "gtx-lite",
+        "name": "GTX LITE",
+        "images": {
+          "slate": [
+            "/img/vehicles/gtx.png",
+            "/img/vehicles/gtx.png",
+            "/img/vehicles/gtx.png"
+          ],
+          "blue": [
+            "/img/vehicles/gtx.png",
+            "/img/vehicles/gtx.png",
+            "/img/vehicles/gtx.png"
+          ],
+          "teal": [
+            "/img/vehicles/gtx.png",
+            "/img/vehicles/gtx.png",
+            "/img/vehicles/gtx.png"
+          ]
+        },
+        "colors": "",
+        "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
+        "specs": [
+          {
+            "feature": "Battery",
+            "description": "1.8 KwH"
+          },
+          {
+            "feature": "Battery Features",
+            "description": "LFP with 1500 cycles, Active Balancing, Waterproof (IP67)"
+          },
+          {
+            "feature": "Battery Warranty",
+            "description": "3 Years"
+          },
+          {
+            "feature": "Charging Time",
+            "description": "3 Hours (12 A)"
+          },
+          {
+            "feature": "Motor",
+            "description": "1500 W"
+          },
+          {
+            "feature": "Max Speed",
+            "description": "50 Km/H"
+          },
+          {
+            "feature": "Warranty On Electronics",
+            "description": "1 Year"
+          },
+          {
+            "feature": "Max Range (@30 Km/H)",
+            "description": "100 Km"
+          },
+          {
+            "feature": "Max Range (@45 Km/H)",
+            "description": "90 Km"
+          },
+          {
+            "feature": "Max Range (@Full Speed)",
+            "description": "60 Km"
+          },
+          {
+            "feature": "Other Key Benefits",
+            "description": "Fire-Safe Advanced LFP Battery, Range Prediction, Comfortable Ride, Stable and Safe"
+          }
+        ],
+        "keyFeatures": [
+          {
+            "feature": "Fire-Safe Advanced LFP Battery",
+            "description": "LFP batteries contain no unethically sourced nickel or cobalt, their eco-friendly composition aligns with sustainable energy storage practices."
+          },
+          {
+            "feature": "Range Prediction",
+            "description": "All this magic happens in the cloud, where map database updates and routing software enhancements are pushed over the air."
+          },
+          {
+            "feature": "Comfortable Ride",
+            "description": "It's not the flashiest, but it's practical and wallet-friendly, it has a comfortable plush seat with excellent support for both the rider and pillion."
+          },
+          {
+            "feature": "And Safe",
+            "description": "It's like wearing a superhero cape for your head. Always wear a good-quality helmet—it's your brain's best friend."
+          }
+        ],
+        "batteryFeatures": [
+          {
+            "feature": "LFP with 1500 cycles",
+            "description": "Solid-state batteries can pack more energy into a smaller space, potentially improving the range of electric vehicles (EVs)."
+          },
+          {
+            "feature": "Active Balancing",
+            "description": "Uses smart sensors and motors in its framework to balance the rider fore and aft. It lacks traditional steering linkages and shifts direction by adjusting power and speed to one or both wheels."
+          },
+          {
+            "feature": "Waterproof (IP67)",
+            "description": "Whether you're camping, sailing, or just caught in a rainstorm, waterproof batteries ensure reliable performance even when things get soggy."
+          }
+        ]
+      },
       "vehicleList": [
         {
           "id": "gtx-lite",
@@ -547,6 +649,12 @@
       },
       "tagline": "At the same time, the fact that we are wholly owned and totally independent from manufacturer and other group control gives you confidence that we will only recommend what is right for you.",
       "successMessage": "🎉 Thank you for reaching us out, we will get back to you shortly.",
+      "people": [
+        "https://i.ibb.co/gFb3ns6/image-1.jpg",
+        "https://i.ibb.co/rfHFq15/image-2.jpg",
+        "https://i.ibb.co/9y7nYCD/image-3.jpg"
+      ],
+      "pattern": "/img/icons/pattern.svg",
       "contactInfo": {
         "phone": {
           "title": "+91-9023-987-528",
@@ -569,9 +677,9 @@
       "component": "Prebook",
       "meta": {
         "title": "Prebook, Rhyno EV",
-        "description": "Book your vehicle to put yourself infront of the queue.",
-        "successMessage": "🎉 Payment Sucessful."
-      }
+        "description": "Book your vehicle to put yourself infront of the queue."
+      },
+      "successMessage": "🎉 Payment Sucessful."
     },
     "rentals": {
       "icon": "",
@@ -614,15 +722,17 @@
       "component": "Auth",
       "meta": {
         "title": "Auth | Rhyno EV",
-        "description": "login to your Rhyno EV account.",
-        "admin": {
-          "name": "Arsalan Ansari",
-          "phone": "9568621239",
-          "email": "theansaricompany@gmail.com",
-          "password": "arsalan-ansari",
-          "order": false,
-          "image": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        }
+        "description": "login to your Rhyno EV account."
+      },
+      "alertSignup": "🎉 Account created!",
+      "alertError": "🥹 Invalid credentials, please try again!",
+      "admin": {
+        "name": "Arsalan Ansari",
+        "phone": "9568621239",
+        "email": "theansaricompany@gmail.com",
+        "password": "arsalan-ansari",
+        "order": false,
+        "image": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
       }
     }
   }

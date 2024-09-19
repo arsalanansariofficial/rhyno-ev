@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import Contact from '@/_components/contact';
+
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export const metadata: Metadata = {

@@ -1,17 +1,21 @@
 'use client';
 
 import { useState } from 'react';
+
+import { DataTable } from '@/_components/ui/data-table';
 import * as ShadCarousel from '@/_components/ui/carousel';
 
 import Header from '@/_components/header';
 import Footer from '@/_components/footer';
-import { DataTable } from './ui/data-table';
-import { cn, getColumnDefinition, pretty } from '@/_lib/utils';
+
+import { cn, getColumnDefinition } from '@/_lib/utils';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
+import { faArrowRight, faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
-  const [variant, setVariant] = useState('slate');
+  const [variant, setVariant] = useState(rhynoEv.pages.vehicles.defaultVariant);
 
   const vehicle = rhynoEv.pages.vehicles.vehicleList[vehicleIndex];
   const images = vehicle.images[variant as keyof typeof vehicle.images];
@@ -26,9 +30,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
               <div>
                 <div className="relative w-full">
                   <div className="animate-blob absolute -left-4 top-0 h-72 w-72 rounded-full bg-violet-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-
                   <div className="animate-blob animation-delay-4000 absolute -bottom-24 right-20 h-72 w-72 rounded-full bg-fuchsia-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-
                   <ShadCarousel.Carousel>
                     <ShadCarousel.CarouselContent>
                       {images.map((image, index) => {
@@ -89,54 +91,10 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
                   return (
                     <div key={index}>
                       <dt className="mb-5 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="icon icon-tabler icon-tabler-aperture h-6 w-6"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <circle cx="12" cy="12" r="9"></circle>
-                          <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                          <line
-                            x1="3.6"
-                            y1="15"
-                            x2="14.15"
-                            y2="15"
-                            transform="rotate(72 12 12)"
-                          ></line>
-                          <line
-                            x1="3.6"
-                            y1="15"
-                            x2="14.15"
-                            y2="15"
-                            transform="rotate(144 12 12)"
-                          ></line>
-                          <line
-                            x1="3.6"
-                            y1="15"
-                            x2="14.15"
-                            y2="15"
-                            transform="rotate(216 12 12)"
-                          ></line>
-                          <line
-                            x1="3.6"
-                            y1="15"
-                            x2="14.15"
-                            y2="15"
-                            transform="rotate(288 12 12)"
-                          ></line>
-                        </svg>
+                        <FontAwesomeIcon
+                          icon={faPaperclip}
+                          className="text-xl text-blue-600"
+                        />
                       </dt>
                       <dd className="flex-grow">
                         <h2 className="mb-3 text-lg font-medium tracking-tighter text-neutral-600">
@@ -146,22 +104,15 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
                           {info.description}
                         </p>
                         <a
-                          href="#"
-                          className="mt-6 inline-flex items-center font-semibold text-blue-500 hover:text-neutral-600 md:mb-2 lg:mb-0"
                           title="read more"
+                          href={`#${info.feature}`}
+                          className="mt-6 inline-flex items-center gap-2 font-semibold text-blue-500 hover:text-neutral-600 md:mb-2 lg:mb-0"
                         >
                           Learn More
-                          <svg
-                            className="ml-2 h-4 w-4"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="20"
-                            height="20"
-                            fill="currentColor"
-                          >
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
-                          </svg>
+                          <FontAwesomeIcon
+                            icon={faArrowRight}
+                            className="text-xl"
+                          />
                         </a>
                       </dd>
                     </div>
@@ -178,21 +129,19 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
               {rhynoEv.pages.vehicles.tableHeadings[0]}
             </h2>
             <DataTable
-              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
               data={vehicle.specs}
+              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
             />
           </div>
-
           <div className="mb-8 space-y-8">
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
               {rhynoEv.pages.vehicles.tableHeadings[2]}
             </h2>
             <DataTable
-              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
               data={vehicle.batteryFeatures}
+              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
             />
           </div>
-
           <a
             href={rhynoEv.nav.prebook.href}
             className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"

@@ -1,9 +1,14 @@
 'use client';
 
-import Header from '@/_components/header';
-import Footer from '@/_components/footer';
+import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { DataTable } from './ui/data-table';
 import * as ShadCarousel from '@/_components/ui/carousel';
+
+import Header from '@/_components/header';
+import Footer from '@/_components/footer';
+
 import { getColumnDefinition, pretty } from '@/_lib/utils';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
@@ -22,11 +27,9 @@ export default function Compare() {
               <div className="mx-auto flex max-w-7xl flex-wrap items-center">
                 <div className="w-full rounded-xl">
                   <div>
-                    <div className="max-w-lg-- relative w-full">
+                    <div className="relative w-full">
                       <div className="animate-blob absolute -left-4 top-0 h-72 w-72 rounded-full bg-violet-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-
                       <div className="animate-blob animation-delay-4000 absolute -bottom-24 right-20 h-72 w-72 rounded-full bg-fuchsia-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-
                       <ShadCarousel.Carousel>
                         <ShadCarousel.CarouselContent>
                           {vehicle.images.slate.map((image, index) => {
@@ -36,9 +39,9 @@ export default function Compare() {
                                 className="relative"
                               >
                                 <img
-                                  className="w-full rounded-lg object-cover object-center shadow-2xl"
                                   alt="hero"
                                   src={image}
+                                  className="w-full rounded-lg object-cover object-center shadow-2xl"
                                 />
                               </ShadCarousel.CarouselItem>
                             );
@@ -48,9 +51,8 @@ export default function Compare() {
                     </div>
                   </div>
                 </div>
-
-                <div className="lg:w-1/2-- mb-16 mt-12 flex flex-col items-start text-left md:mb-0 lg:flex-grow lg:pl-6">
-                  <div className="lg:w-1/2-- flex flex-col items-start text-left md:mb-0 lg:flex-grow">
+                <div className="mb-16 mt-12 flex flex-col items-start text-left md:mb-0 lg:flex-grow lg:pl-6">
+                  <div className="flex flex-col items-start text-left md:mb-0 lg:flex-grow">
                     <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
                       {vehicle.name}
                     </h1>
@@ -66,59 +68,10 @@ export default function Compare() {
                           return (
                             <div key={index}>
                               <dt className="mb-5 inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  className="icon icon-tabler icon-tabler-aperture h-6 w-6"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  strokeWidth="1.5"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                >
-                                  <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                  ></path>
-                                  <circle cx="12" cy="12" r="9"></circle>
-                                  <line
-                                    x1="3.6"
-                                    y1="15"
-                                    x2="14.15"
-                                    y2="15"
-                                  ></line>
-                                  <line
-                                    x1="3.6"
-                                    y1="15"
-                                    x2="14.15"
-                                    y2="15"
-                                    transform="rotate(72 12 12)"
-                                  ></line>
-                                  <line
-                                    x1="3.6"
-                                    y1="15"
-                                    x2="14.15"
-                                    y2="15"
-                                    transform="rotate(144 12 12)"
-                                  ></line>
-                                  <line
-                                    x1="3.6"
-                                    y1="15"
-                                    x2="14.15"
-                                    y2="15"
-                                    transform="rotate(216 12 12)"
-                                  ></line>
-                                  <line
-                                    x1="3.6"
-                                    y1="15"
-                                    x2="14.15"
-                                    y2="15"
-                                    transform="rotate(288 12 12)"
-                                  ></line>
-                                </svg>
+                                <FontAwesomeIcon
+                                  icon={faPaperclip}
+                                  className="text-xl text-blue-600"
+                                />
                               </dt>
                               <dd className="flex-grow">
                                 <h2 className="mb-3 text-lg font-medium tracking-tighter text-neutral-600">
@@ -132,15 +85,14 @@ export default function Compare() {
                           );
                         })}
                       </dl>
-
                       <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-3xl lg:text-xl">
                         {pretty(Object.keys(vehicle).at(-1) as string)}
                       </h2>
                       <DataTable
+                        data={vehicle.batteryFeatures}
                         columns={getColumnDefinition(
                           rhynoEv.pages.vehicles.tableHeaders
                         )}
-                        data={vehicle.batteryFeatures}
                       />
                     </div>
                     <a
@@ -158,12 +110,12 @@ export default function Compare() {
 
         <section className="mx-auto max-w-7xl space-y-4 p-3 sm:px-6 md:px-12 lg:px-24">
           <div className="space-y-4">
-            <h3 className="text-center-- text-3xl font-bold leading-none tracking-tighter text-neutral-600">
+            <h3 className="text-3xl font-bold leading-none tracking-tighter text-neutral-600">
               {rhynoEv.pages.vehicles.tableHeadings[0]}
             </h3>
             <DataTable
-              columns={getColumnDefinition(rhynoEv.pages.compare.tableHeaders)}
               data={rhynoEv.pages.compare.comparison}
+              columns={getColumnDefinition(rhynoEv.pages.compare.tableHeaders)}
             />
           </div>
         </section>

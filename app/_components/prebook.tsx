@@ -1,20 +1,23 @@
 'use client';
 
-import { z } from 'zod';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import Header from '@/_components/header';
-import Footer from '@/_components/footer';
+import { toast } from 'sonner';
+import { Toaster } from '@/_components/ui/sonner';
+
 import { Input } from '@/_components/ui/input';
 import * as CnForm from '@/_components/ui/form';
+
 import { Button } from '@/_components/ui/button';
 import * as CnSelect from '@/_components/ui/select';
 
-import { toast } from 'sonner';
-import { Toaster } from '@/_components/ui/sonner';
-import { useRouter } from 'next/navigation';
+import Header from '@/_components/header';
+import Footer from '@/_components/footer';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
@@ -41,27 +44,10 @@ const formSchema = z.object({
 });
 
 export default function Prebook() {
-  useEffect(function () {
-    const user = JSON.parse(
-      sessionStorage.getItem('user') as string
-    ) as typeof rhynoEv.pages.auth.meta.admin;
-
-    if (!user) {
-      return router.push(rhynoEv.nav.auth.href);
-    }
-
-    if (user.order) {
-      setHasOrder(true);
-    }
-  }, []);
-
-  const [hasOrder, setHasOrder] = useState(false);
-
   const router = useRouter();
 
-  const [model, setModel] = useState(
-    rhynoEv.pages.vehicles.vehicleList[0].name
-  );
+  const [hasOrder, setHasOrder] = useState(false);
+  const [model, setModel] = useState(rhynoEv.pages.vehicles.vehicle.name);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -74,15 +60,29 @@ export default function Prebook() {
     }
   });
 
+  useEffect(function () {
+    const user = JSON.parse(
+      sessionStorage.getItem('user') as string
+    ) as typeof rhynoEv.pages.auth.admin;
+
+    if (!user) {
+      return router.push(rhynoEv.nav.auth.href);
+    }
+
+    if (user.order) {
+      setHasOrder(true);
+    }
+  }, []);
+
   function onSubmit(values: z.infer<typeof formSchema>) {
     const user = JSON.parse(
       sessionStorage.getItem('user') as string
-    ) as typeof rhynoEv.pages.auth.meta.admin;
+    ) as typeof rhynoEv.pages.auth.admin;
 
     user.order = true;
     sessionStorage.setItem('user', JSON.stringify(user));
 
-    toast(rhynoEv.pages.prebook.meta.successMessage);
+    toast(rhynoEv.pages.prebook.successMessage);
     setTimeout(() => router.push('/'), 500);
   }
 
@@ -95,7 +95,6 @@ export default function Prebook() {
             <h1 className="text-2xl font-bold leading-none tracking-tighter text-neutral-600">
               Checkout
             </h1>
-
             <div className="relative">
               <div className="space-y-2">
                 <label className="text-sm">Model</label>
@@ -121,7 +120,6 @@ export default function Prebook() {
               </div>
               <p className="absolute right-0 top-0 font-bold">&#x20B9; 500</p>
             </div>
-
             <CnForm.Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -140,7 +138,6 @@ export default function Prebook() {
                     </CnForm.FormItem>
                   )}
                 />
-
                 <CnForm.FormField
                   name="number"
                   control={form.control}
@@ -149,17 +146,16 @@ export default function Prebook() {
                       <CnForm.FormLabel>Card Number</CnForm.FormLabel>
                       <CnForm.FormControl>
                         <Input
-                          placeholder="eg. 1234 5678 9012 3456"
                           {...field}
-                          pattern="/\d/."
                           type="number"
+                          pattern="/\d/."
+                          placeholder="eg. 1234 5678 9012 3456"
                         />
                       </CnForm.FormControl>
                       <CnForm.FormMessage />
                     </CnForm.FormItem>
                   )}
                 />
-
                 <CnForm.FormField
                   name="expMonth"
                   control={form.control}
@@ -168,20 +164,19 @@ export default function Prebook() {
                       <CnForm.FormLabel>MM</CnForm.FormLabel>
                       <CnForm.FormControl>
                         <Input
-                          {...field}
-                          type="number"
-                          placeholder="eg. 05"
                           min={1}
                           max={12}
+                          {...field}
                           minLength={1}
                           maxLength={2}
+                          type="number"
+                          placeholder="eg. 05"
                         />
                       </CnForm.FormControl>
                       <CnForm.FormMessage />
                     </CnForm.FormItem>
                   )}
                 />
-
                 <CnForm.FormField
                   name="expYear"
                   control={form.control}
@@ -190,20 +185,19 @@ export default function Prebook() {
                       <CnForm.FormLabel>YY</CnForm.FormLabel>
                       <CnForm.FormControl>
                         <Input
-                          {...field}
-                          type="Number"
-                          placeholder="eg. 25"
                           min={25}
                           max={30}
+                          {...field}
                           minLength={1}
                           maxLength={2}
+                          type="Number"
+                          placeholder="eg. 25"
                         />
                       </CnForm.FormControl>
                       <CnForm.FormMessage />
                     </CnForm.FormItem>
                   )}
                 />
-
                 <CnForm.FormField
                   name="cvc"
                   control={form.control}
@@ -212,20 +206,19 @@ export default function Prebook() {
                       <CnForm.FormLabel>CVC</CnForm.FormLabel>
                       <CnForm.FormControl>
                         <Input
-                          {...field}
-                          type="Number"
-                          placeholder="eg. 000"
                           min={0}
                           max={999}
+                          {...field}
                           minLength={3}
                           maxLength={3}
+                          type="Number"
+                          placeholder="eg. 000"
                         />
                       </CnForm.FormControl>
                       <CnForm.FormMessage />
                     </CnForm.FormItem>
                   )}
                 />
-
                 <Button type="submit" className="col-span-4 sm:max-w-min">
                   Pay
                 </Button>
@@ -240,11 +233,9 @@ export default function Prebook() {
               <span className="text-3xl font-semibold uppercase tracking-widest">
                 🎉
               </span>
-
               <p className="mx-auto text-sm font-semibold uppercase tracking-widest text-pink-500 sm:w-2/3">
                 We've already got your order, check your email for more details.
               </p>
-
               <h2 className="mt-6 text-3xl font-bold text-teal-900">
                 Thank you for choosing RhynoEV
               </h2>

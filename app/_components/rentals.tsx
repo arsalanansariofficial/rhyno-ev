@@ -1,12 +1,13 @@
 'use client';
 
+import { DataTable } from '@/_components/ui/data-table';
+
 import Header from '@/_components/header';
 import Footer from '@/_components/footer';
 
-import rhynoEv from '../../public/about/rhyno-ev.json';
 import { getColumnDefinition } from '@/_lib/utils';
-import { DataTable } from './ui/data-table';
-import vehicle from './vehicle';
+
+import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export default function Rentals() {
   return (
@@ -37,8 +38,8 @@ export default function Rentals() {
           </h2>
           <div>
             <DataTable
-              columns={getColumnDefinition(rhynoEv.pages.rentals.tableHeaders)}
               data={rhynoEv.pages.rentals.pricing}
+              columns={getColumnDefinition(rhynoEv.pages.rentals.tableHeaders)}
             />
           </div>
         </section>

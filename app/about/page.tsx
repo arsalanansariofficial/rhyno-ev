@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 import About from '@/_components/about';
-import rhynoEv from '../../public/about/rhyno-ev.json';
 
-import '@/globals.css';
+import rhynoEv from '../../public/about/rhyno-ev.json';
 
 export const metadata: Metadata = {
   title: rhynoEv.pages.about.meta.title,
