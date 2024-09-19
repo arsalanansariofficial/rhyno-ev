@@ -14,15 +14,15 @@ export default function Footer() {
           <div>
             <div className="flex justify-center text-teal-600 sm:justify-start">
               <img
-                src={rhynoEv.logo}
-                alt={rhynoEv.title}
+                src={rhynoEv.meta.logo}
+                alt={rhynoEv.main.home.tagline}
                 className="aspect-video w-8 sm:w-12"
               />
             </div>
             <p className="mt-6 text-center leading-relaxed text-gray-500 sm:max-w-md sm:text-left">
-              {rhynoEv.pages.home.tagline}
+              {rhynoEv.main.home.tagline}
             </p>
-            <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+            <ul className="mt-8 flex justify-center gap-4 sm:justify-start">
               <li>
                 <a
                   target="_blank"
@@ -33,20 +33,6 @@ export default function Footer() {
                   <span className="sr-only">{rhynoEv.nav.instagram.title}</span>
                   <FontAwesomeIcon
                     icon={faBrand.faInstagram}
-                    className="text-xl"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href={rhynoEv.nav.instagram.href}
-                  className="text-teal-700 transition hover:text-teal-700/75"
-                >
-                  <span className="sr-only">{rhynoEv.nav.instagram.title}</span>
-                  <FontAwesomeIcon
-                    icon={faBrand.faGithub}
                     className="text-xl"
                   />
                 </a>
@@ -73,26 +59,26 @@ export default function Footer() {
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    href={rhynoEv.footer.career.href}
+                    href={rhynoEv.footer.ourServices.career.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.career.title}
+                    {rhynoEv.footer.ourServices.career.title}
                   </a>
                 </li>
                 <li>
                   <a
-                    href={rhynoEv.footer.rentals.href}
+                    href={rhynoEv.footer.ourServices.rentals.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.rentals.title}
+                    {rhynoEv.footer.ourServices.rentals.title}
                   </a>
                 </li>
                 <li>
                   <a
-                    href={rhynoEv.footer.vehicles.href}
+                    href={rhynoEv.footer.ourServices.vehicles.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.vehicles.title}
+                    {rhynoEv.footer.ourServices.vehicles.title}
                   </a>
                 </li>
               </ul>
@@ -102,7 +88,7 @@ export default function Footer() {
               <ul className="mt-8 space-y-4 text-sm">
                 <li className="mx-auto max-w-40 text-left sm:mx-0">
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.email.href}
+                    href={rhynoEv.footer.contactUs.email.href}
                     className="inline-flex items-center justify-center gap-1.5"
                   >
                     <FontAwesomeIcon
@@ -110,13 +96,13 @@ export default function Footer() {
                       className="aspect-square w-4 text-base text-teal-600"
                     />
                     <span className="text-gray-700">
-                      {rhynoEv.pages.contact.contactInfo.email.title}
+                      {rhynoEv.footer.contactUs.email.title}
                     </span>
                   </a>
                 </li>
                 <li className="mx-auto max-w-40 text-left sm:mx-0">
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.phone.href}
+                    href={rhynoEv.footer.contactUs.phone.href}
                     className="inline-flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   >
                     <FontAwesomeIcon
@@ -124,14 +110,14 @@ export default function Footer() {
                       className="aspect-square w-4 text-base text-teal-600"
                     />
                     <span className="text-gray-700">
-                      {rhynoEv.pages.contact.contactInfo.phone.title}
+                      {rhynoEv.footer.contactUs.phone.title}
                     </span>
                   </a>
                 </li>
                 <li className="mx-auto flex max-w-40 items-start justify-center gap-1.5 text-left sm:mx-0 ltr:sm:justify-start rtl:sm:justify-end">
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.address.href}
-                    title={rhynoEv.pages.contact.contactInfo.address.title}
+                    href={rhynoEv.footer.contactUs.address.href}
+                    title={rhynoEv.footer.contactUs.address.title}
                     className="flex items-center gap-1.5"
                   >
                     <FontAwesomeIcon
@@ -139,7 +125,7 @@ export default function Footer() {
                       className="aspect-square w-4 text-base text-teal-600"
                     />
                     <address className="-mt-0.5 line-clamp-2 flex-1 not-italic text-gray-700">
-                      {rhynoEv.pages.contact.contactInfo.address.title}
+                      {rhynoEv.footer.contactUs.address.title}
                     </address>
                   </a>
                 </li>
@@ -150,26 +136,26 @@ export default function Footer() {
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    href={rhynoEv.footer.privacyPolicy.href}
+                    href={rhynoEv.footer.helpfulLinks.privacyPolicy.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.privacyPolicy.title}
+                    {rhynoEv.footer.helpfulLinks.privacyPolicy.title}
                   </a>
                 </li>
                 <li>
                   <a
-                    href={rhynoEv.footer.refundPolicy.href}
+                    href={rhynoEv.footer.helpfulLinks.refundPolicy.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.refundPolicy.title}
+                    {rhynoEv.footer.helpfulLinks.refundPolicy.title}
                   </a>
                 </li>
                 <li>
                   <a
-                    href={rhynoEv.footer.websitePolicy.href}
+                    href={rhynoEv.footer.helpfulLinks.websitePolicy.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
-                    {rhynoEv.footer.websitePolicy.title}
+                    {rhynoEv.footer.helpfulLinks.websitePolicy.title}
                   </a>
                 </li>
               </ul>
@@ -191,7 +177,7 @@ export default function Footer() {
               </span>
             </p>
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              &copy; {new Date().getFullYear()} {rhynoEv.title}
+              &copy; {new Date().getFullYear()} {rhynoEv.meta.title}
             </p>
           </div>
         </div>

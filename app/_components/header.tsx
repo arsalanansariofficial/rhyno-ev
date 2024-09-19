@@ -19,8 +19,8 @@ export default function Header({ cta = true }: { cta?: boolean }) {
             <a className="block text-teal-600" href={rhynoEv.nav.home.href}>
               <span className="sr-only">{rhynoEv.nav.home.title}</span>
               <img
-                src={rhynoEv.logo}
-                alt={rhynoEv.title}
+                src={rhynoEv.meta.logo}
+                alt={rhynoEv.meta.title}
                 className="aspect-video w-8 sm:w-12"
               />
             </a>
@@ -120,7 +120,7 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                 <Shad.SheetContent aria-describedby={undefined}>
                   <Shad.SheetHeader>
                     <Shad.SheetTitle className="text-left">
-                      {rhynoEv.title}
+                      {rhynoEv.meta.title}
                     </Shad.SheetTitle>
                   </Shad.SheetHeader>
                   <div className="bg-white flex h-screen flex-col justify-between text-left">

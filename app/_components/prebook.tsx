@@ -47,7 +47,7 @@ export default function Prebook() {
   const router = useRouter();
 
   const [hasOrder, setHasOrder] = useState(false);
-  const [model, setModel] = useState(rhynoEv.pages.vehicles.vehicle.name);
+  const [model, setModel] = useState(rhynoEv.main.vehicles.defaultVehicle.name);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -63,7 +63,7 @@ export default function Prebook() {
   useEffect(function () {
     const user = JSON.parse(
       sessionStorage.getItem('user') as string
-    ) as typeof rhynoEv.pages.auth.admin;
+    ) as typeof rhynoEv.main.auth.admin;
 
     if (!user) {
       return router.push(rhynoEv.nav.auth.href);
@@ -77,12 +77,12 @@ export default function Prebook() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     const user = JSON.parse(
       sessionStorage.getItem('user') as string
-    ) as typeof rhynoEv.pages.auth.admin;
+    ) as typeof rhynoEv.main.auth.admin;
 
     user.order = true;
     sessionStorage.setItem('user', JSON.stringify(user));
 
-    toast(rhynoEv.pages.prebook.successMessage);
+    toast(rhynoEv.main.prebook.successMessage);
     setTimeout(() => router.push('/'), 500);
   }
 
@@ -106,15 +106,13 @@ export default function Prebook() {
                     />
                   </CnSelect.SelectTrigger>
                   <CnSelect.SelectContent>
-                    {rhynoEv.pages.vehicles.vehicleList.map(
-                      (vehicle, index) => {
-                        return (
-                          <CnSelect.SelectItem key={index} value={vehicle.name}>
-                            {vehicle.name}
-                          </CnSelect.SelectItem>
-                        );
-                      }
-                    )}
+                    {rhynoEv.main.vehicles.vehicleList.map((vehicle, index) => {
+                      return (
+                        <CnSelect.SelectItem key={index} value={vehicle.name}>
+                          {vehicle.name}
+                        </CnSelect.SelectItem>
+                      );
+                    })}
                   </CnSelect.SelectContent>
                 </CnSelect.Select>
               </div>

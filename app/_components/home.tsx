@@ -19,11 +19,11 @@ export default function Home() {
       <main>
         <section className="mx-auto max-w-7xl p-4 sm:px-6 md:px-12 lg:px-24">
           <h1 className="content-center rounded-xl bg-gradient-to-r from-[#cc2b5e] to-[#753a88] p-8 text-center text-xl font-bold leading-none tracking-tighter text-sky-50 sm:p-8 md:min-h-screen md:text-5xl lg:text-5xl">
-            {rhynoEv.pages.home.tagline}
+            {rhynoEv.main.home.tagline}
           </h1>
         </section>
 
-        {rhynoEv.pages.vehicles.vehicleList.map((vehicle, index) => (
+        {rhynoEv.main.vehicles.vehicleList.map((vehicle, index) => (
           <Vehicle key={index} vehicle={vehicle} />
         ))}
 
@@ -37,7 +37,7 @@ export default function Home() {
             plugins={[Autoplay({ delay: 2000 })]}
           >
             <ShadCarousel.CarouselContent>
-              {rhynoEv.pages.home.usp.map((usp, index) => {
+              {rhynoEv.main.home.usp.map((usp, index) => {
                 return (
                   <ShadCarousel.CarouselItem
                     key={index}
@@ -68,8 +68,10 @@ export default function Home() {
   );
 }
 
-function Vehicle(props: { vehicle: typeof rhynoEv.pages.vehicles.vehicle }) {
-  const [variant, setVariant] = useState(rhynoEv.pages.vehicles.defaultVariant);
+function Vehicle(props: {
+  vehicle: typeof rhynoEv.main.vehicles.defaultVehicle;
+}) {
+  const [variant, setVariant] = useState(rhynoEv.main.vehicles.defaultVariant);
   const images =
     props.vehicle.images[variant as keyof typeof props.vehicle.images];
 

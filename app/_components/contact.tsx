@@ -11,7 +11,7 @@ import rhynoEv from '../../public/about/rhyno-ev.json';
 export default function Contact() {
   function handleSubmit(event: any): void {
     event.preventDefault();
-    toast(rhynoEv.pages.contact.successMessage);
+    toast(rhynoEv.main.contact.successMessage);
   }
 
   return (
@@ -23,23 +23,23 @@ export default function Contact() {
             <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
               <div className="lg:col-span-2 lg:py-12">
                 <p className="max-w-xl text-lg">
-                  {rhynoEv.pages.contact.tagline}
+                  {rhynoEv.main.contact.tagline}
                 </p>
                 <div className="mt-8 flex flex-col gap-2">
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.phone.href}
+                    href={rhynoEv.footer.contactUs.phone.href}
                     className="text-2xl font-bold text-pink-600"
                   >
-                    {rhynoEv.pages.contact.contactInfo.phone.title}
+                    {rhynoEv.footer.contactUs.phone.title}
                   </a>
                   <a
-                    href={rhynoEv.pages.contact.contactInfo.email.href}
+                    href={rhynoEv.footer.contactUs.email.href}
                     className="text-2xl font-bold text-slate-700"
                   >
-                    {rhynoEv.pages.contact.contactInfo.email.title}
+                    {rhynoEv.footer.contactUs.email.title}
                   </a>
                   <address className="not-italic">
-                    {rhynoEv.pages.contact.contactInfo.address.title}
+                    {rhynoEv.footer.contactUs.address.title}
                   </address>
                 </div>
               </div>

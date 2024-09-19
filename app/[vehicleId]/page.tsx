@@ -7,7 +7,7 @@ import rhynoEv from '../../public/about/rhyno-ev.json';
 export async function generateMetadata(props: {
   params: { vehicleId: string };
 }): Promise<Metadata> {
-  const vehicle = rhynoEv.pages.vehicles.vehicleList.find(
+  const vehicle = rhynoEv.main.vehicles.vehicleList.find(
     vehicle => vehicle.id === props.params.vehicleId
   )!;
 
@@ -18,7 +18,7 @@ export async function generateMetadata(props: {
 }
 
 export default function VehiclePage(props: { params: { vehicleId: string } }) {
-  const vehicleIndex = rhynoEv.pages.vehicles.vehicleList.findIndex(
+  const vehicleIndex = rhynoEv.main.vehicles.vehicleList.findIndex(
     vehicle => vehicle.id === props.params.vehicleId
   );
 
@@ -26,7 +26,7 @@ export default function VehiclePage(props: { params: { vehicleId: string } }) {
 }
 
 export async function generateStaticParams() {
-  return rhynoEv.pages.vehicles.vehicleList.map(vehicle => ({
+  return rhynoEv.main.vehicles.vehicleList.map(vehicle => ({
     vehicleId: vehicle.id
   }));
 }

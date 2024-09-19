@@ -1,19 +1,28 @@
 {
-  "title": "Rhyno EV",
-  "logo": "/img/icons/rhyno-ev.png",
+  "meta": {
+    "title": "Rhyno EV",
+    "description": "Welcome to Rhyno EV, the leading electric vehicle company in the United States.",
+    "logo": "/img/icons/rhyno-ev.png"
+  },
   "nav": {
     "home": {
-      "icon": "/img/icons/logo.svg",
       "href": "/",
-      "title": "Home"
+      "title": "Home",
+      "icon": "/img/icons/logo.svg"
+    },
+    "instagram": {
+      "href": "https://github.com/arsalanansariofficial",
+      "title": "Instagram"
+    },
+    "linkedIn": {
+      "href": "https://www.linkedin.com/in/arsalanansariofficial/",
+      "title": "Linked In"
     },
     "about": {
-      "icon": "",
       "href": "/about",
       "title": "About us"
     },
     "vehicles": {
-      "icon": "",
       "href": "/gtx-lite",
       "title": "vehicles",
       "subMenu": [
@@ -24,89 +33,25 @@
       ]
     },
     "contact": {
-      "icon": "",
       "href": "/contact",
       "title": "Contact us"
     },
     "prebook": {
-      "icon": "",
       "href": "/prebook",
       "title": "Pre-book Now"
     },
-    "instagram": {
-      "icon": "/img/icons/icon-instagram.svg",
-      "href": "https://instagram.com/",
-      "title": "Instagram"
-    },
-    "linkedIn": {
-      "icon": "/img/icons/icon-pinterest.svg",
-      "href": "https://linkedin.com/",
-      "title": "Linked In"
-    },
     "auth": {
-      "icon": "",
       "href": "/auth",
       "title": "Auth"
     }
   },
-  "footer": {
-    "rentals": {
-      "icon": "",
-      "href": "/rentals",
-      "title": "Rentals"
-    },
-    "vehicles": {
-      "icon": "",
-      "href": "/gtx-lite",
-      "title": "vehicles"
-    },
-    "contact": {
-      "icon": "",
-      "href": "/contact",
-      "title": "Contact us"
-    },
-    "privacyPolicy": {
-      "icon": "",
-      "href": "/about/privacy-policy.pdf",
-      "title": "Privacy policy"
-    },
-    "refundPolicy": {
-      "icon": "",
-      "href": "/about/refund-policy.pdf",
-      "title": "Refund policy"
-    },
-    "websitePolicy": {
-      "icon": "",
-      "href": "/about/website-policy.pdf",
-      "title": "Website policy"
-    },
-    "career": {
-      "icon": "",
-      "href": "https://linkedin.com",
-      "title": "Career"
-    },
-    "instagram": {
-      "icon": "",
-      "href": "https://instagram.com",
-      "title": "Instagram"
-    },
-    "linkedIn": {
-      "icon": "",
-      "href": "https://linkedin.com",
-      "title": "Linkedin"
-    }
-  },
-  "pages": {
+  "main": {
     "home": {
-      "icon": "",
-      "path": "/",
-      "title": "Home",
-      "component": "Home",
-      "tagline": "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style.",
       "meta": {
         "title": "Home, Rhyno EV",
         "description": "Welcome to Rhyno EV, the leading electric vehicle company in the United States."
       },
+      "tagline": "Let's Elevate Your Ride Experience With Rhyno - Where Superiority Meets Style.",
       "usp": [
         {
           "title": "LFP Battery",
@@ -126,11 +71,8 @@
         }
       ]
     },
+
     "about": {
-      "icon": "",
-      "path": "about",
-      "title": "About us",
-      "component": "About",
       "meta": {
         "title": "About us, Rhyno EV",
         "description": "Established in 2019 by an automotive engineer with a vision for sustainable and robust mobility solutions."
@@ -140,11 +82,8 @@
         "achievement": "With our first product, we've taken a bold step to create something more than just a vehicle; it's a unique experience of elegance, comfort and style, addressing the pitfalls of conventional electric scooters. Our design prioritizes safety, eliminating concerns of fires and ensuring a longer battery lifespan with our battery technology. Perfectly suited for fleet operators, especially in tourist-centric locations like Goa, our rugged yet aesthetically appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new era in sustainable and dependable electric transportation."
       }
     },
+
     "vehicles": {
-      "icon": "",
-      "path": "vehicles",
-      "title": "vehicles",
-      "component": "vehicles",
       "meta": {
         "title": "vehicles, Rhyno EV",
         "description": "vehicles that have less friction than ever before."
@@ -152,7 +91,7 @@
       "defaultVariant": "slate",
       "tableHeaders": ["feature", "description"],
       "tableHeadings": ["Specifications", "Key Features", "Battery"],
-      "vehicle": {
+      "defaultVehicle": {
         "id": "gtx-lite",
         "name": "GTX LITE",
         "images": {
@@ -172,7 +111,6 @@
             "/img/vehicles/gtx.png"
           ]
         },
-        "colors": "",
         "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
         "specs": [
           {
@@ -274,7 +212,6 @@
               "/img/vehicles/gtx.png"
             ]
           },
-          "colors": "",
           "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
             {
@@ -375,7 +312,6 @@
               "/img/vehicles/gtx.png"
             ]
           },
-          "colors": "",
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive link for GTX : a. Vehicle image b. Color selection buttons c. Textual details Rhyno GTX. Buy now 90-150 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
             {
@@ -476,7 +412,6 @@
               "/img/vehicles/gtx.png"
             ]
           },
-          "colors": "",
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-120 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhino. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
             {
@@ -559,11 +494,47 @@
         }
       ]
     },
+
+    "contact": {
+      "meta": {
+        "title": "Contact us, Rhyno EV",
+        "description": "Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India."
+      },
+      "pattern": "/img/icons/pattern.svg",
+      "successMessage": "🎉 Thank you for reaching us out, we will get back to you shortly.",
+      "tagline": "At the same time, the fact that we are wholly owned and totally independent from manufacturer and other group control gives you confidence that we will only recommend what is right for you.",
+      "people": [
+        "https://i.ibb.co/gFb3ns6/image-1.jpg",
+        "https://i.ibb.co/rfHFq15/image-2.jpg",
+        "https://i.ibb.co/9y7nYCD/image-3.jpg"
+      ]
+    },
+
+    "prebook": {
+      "meta": {
+        "title": "Prebook, Rhyno EV",
+        "description": "Book your vehicle to put yourself infront of the queue."
+      },
+      "successMessage": "🎉 Payment Sucessful."
+    },
+
+    "auth": {
+      "meta": {
+        "title": "Auth | Rhyno EV",
+        "description": "login to your Rhyno EV account."
+      },
+      "alertSignup": "🎉 Account created!",
+      "alertError": "🥹 Invalid credentials, please try again!",
+      "admin": {
+        "name": "Arsalan Ansari",
+        "phone": "9568621239",
+        "email": "theansaricompany@gmail.com",
+        "password": "arsalan-ansari",
+        "order": false
+      }
+    },
+
     "compare": {
-      "icon": "",
-      "path": "/compare",
-      "title": "Compare",
-      "component": "compare",
       "meta": {
         "title": "Compare | Rhyno EV",
         "description": "Compare our best offerings, to find out which vehicle is the best match for you."
@@ -638,65 +609,19 @@
         }
       ]
     },
-    "contact": {
-      "icon": "",
-      "path": "contact",
-      "title": "Contact us",
-      "component": "Contact us",
-      "meta": {
-        "title": "Contact us, Rhyno EV",
-        "description": "Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India."
-      },
-      "tagline": "At the same time, the fact that we are wholly owned and totally independent from manufacturer and other group control gives you confidence that we will only recommend what is right for you.",
-      "successMessage": "🎉 Thank you for reaching us out, we will get back to you shortly.",
-      "people": [
-        "https://i.ibb.co/gFb3ns6/image-1.jpg",
-        "https://i.ibb.co/rfHFq15/image-2.jpg",
-        "https://i.ibb.co/9y7nYCD/image-3.jpg"
-      ],
-      "pattern": "/img/icons/pattern.svg",
-      "contactInfo": {
-        "phone": {
-          "title": "+91-9023-987-528",
-          "href": ""
-        },
-        "email": {
-          "title": "info@rhynoev.com",
-          "href": ""
-        },
-        "address": {
-          "title": "Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India.",
-          "href": ""
-        }
-      }
-    },
-    "prebook": {
-      "icon": "",
-      "path": "prebook",
-      "title": "Pre-book Now",
-      "component": "Prebook",
-      "meta": {
-        "title": "Prebook, Rhyno EV",
-        "description": "Book your vehicle to put yourself infront of the queue."
-      },
-      "successMessage": "🎉 Payment Sucessful."
-    },
+
     "rentals": {
-      "icon": "",
-      "path": "/rentals",
-      "title": "Rentals",
-      "component": "Rentals",
       "meta": {
         "title": "Rentals | Rhyno EV",
-        "description": "Rent rhyno EV's for a short ride.",
-        "headings": ["Our Plans"],
-        "info": [
-          "Discover the joy of electric scooters without the need for a lengthy purchase process.",
-          "Rent Rhyno EV's, and experience the freedom of mobility without the commitment of ownership.",
-          "With our flexible rental options, you can enjoy the convenience of a scooter without the hassle of a long-term lease or purchase."
-        ]
+        "description": "Rent rhyno EV's for a short ride."
       },
+      "headings": ["Our Plans"],
       "tableHeaders": ["name", "baseCharge", "chargePKM"],
+      "info": [
+        "Discover the joy of electric scooters without the need for a lengthy purchase process.",
+        "Rent Rhyno EV's, and experience the freedom of mobility without the commitment of ownership.",
+        "With our flexible rental options, you can enjoy the convenience of a scooter without the hassle of a long-term lease or purchase."
+      ],
       "pricing": [
         {
           "name": "GTX LITE",
@@ -714,25 +639,49 @@
           "chargePKM": 7
         }
       ]
-    },
-    "auth": {
-      "icon": "",
-      "path": "/auth",
-      "title": "Auth",
-      "component": "Auth",
-      "meta": {
-        "title": "Auth | Rhyno EV",
-        "description": "login to your Rhyno EV account."
+    }
+  },
+  "footer": {
+    "ourServices": {
+      "career": {
+        "href": "https://www.linkedin.com/in/arsalanansariofficial/",
+        "title": "Career"
       },
-      "alertSignup": "🎉 Account created!",
-      "alertError": "🥹 Invalid credentials, please try again!",
-      "admin": {
-        "name": "Arsalan Ansari",
-        "phone": "9568621239",
-        "email": "theansaricompany@gmail.com",
-        "password": "arsalan-ansari",
-        "order": false,
-        "image": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      "rentals": {
+        "href": "/rentals",
+        "title": "Rentals"
+      },
+      "vehicles": {
+        "href": "/gtx-lite",
+        "title": "vehicles"
+      }
+    },
+    "contactUs": {
+      "email": {
+        "href": "mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari",
+        "title": "info@rhynoev.com"
+      },
+      "phone": {
+        "href": "https://wa.link/qyr4ih",
+        "title": "+91-9023-987-528"
+      },
+      "address": {
+        "href": "https://maps.app.goo.gl/AaBFXpFsSZDQGnHg8",
+        "title": "Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India."
+      }
+    },
+    "helpfulLinks": {
+      "privacyPolicy": {
+        "href": "/about/privacy-policy.pdf",
+        "title": "Privacy policy"
+      },
+      "refundPolicy": {
+        "href": "/about/refund-policy.pdf",
+        "title": "Refund policy"
+      },
+      "websitePolicy": {
+        "href": "/about/website-policy.pdf",
+        "title": "Website policy"
       }
     }
   }

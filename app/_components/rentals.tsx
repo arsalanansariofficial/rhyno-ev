@@ -16,10 +16,10 @@ export default function Rentals() {
       <main>
         <section className="mx-auto max-w-7xl space-y-4 p-3 sm:px-6 sm:py-8 md:px-12 lg:px-24">
           <h1 className="text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
-            {rhynoEv.pages.rentals.meta.description}
+            {rhynoEv.main.rentals.meta.description}
           </h1>
           <ul className="space-y-2">
-            {rhynoEv.pages.rentals.meta.info.map((info, index) => {
+            {rhynoEv.main.rentals.info.map((info, index) => {
               return (
                 <p
                   key={index}
@@ -34,12 +34,12 @@ export default function Rentals() {
 
         <section className="mx-auto max-w-7xl space-y-4 p-3 sm:px-6 sm:py-8 md:px-12 lg:px-24">
           <h2 className="text-3xl font-bold leading-none tracking-tighter text-neutral-600">
-            {rhynoEv.pages.rentals.meta.headings[0]}
+            {rhynoEv.main.rentals.headings[0]}
           </h2>
           <div>
             <DataTable
-              data={rhynoEv.pages.rentals.pricing}
-              columns={getColumnDefinition(rhynoEv.pages.rentals.tableHeaders)}
+              data={rhynoEv.main.rentals.pricing}
+              columns={getColumnDefinition(rhynoEv.main.rentals.tableHeaders)}
             />
           </div>
         </section>

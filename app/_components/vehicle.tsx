@@ -15,9 +15,9 @@ import { faArrowRight, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
-  const [variant, setVariant] = useState(rhynoEv.pages.vehicles.defaultVariant);
+  const [variant, setVariant] = useState(rhynoEv.main.vehicles.defaultVariant);
 
-  const vehicle = rhynoEv.pages.vehicles.vehicleList[vehicleIndex];
+  const vehicle = rhynoEv.main.vehicles.vehicleList[vehicleIndex];
   const images = vehicle.images[variant as keyof typeof vehicle.images];
 
   return (
@@ -77,7 +77,7 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
                   })}
                 </div>
                 <span className="mb-8 text-xs font-bold uppercase tracking-widest text-blue-600">
-                  {rhynoEv.pages.home.tagline}
+                  {rhynoEv.main.home.tagline}
                 </span>
                 <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
                   {vehicle.name}
@@ -126,20 +126,20 @@ export default function Vehicle({ vehicleIndex }: { vehicleIndex: number }) {
         <section className="mx-auto max-w-7xl p-3 sm:px-6 md:px-12 lg:px-24">
           <div className="mb-8 space-y-8">
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
-              {rhynoEv.pages.vehicles.tableHeadings[0]}
+              {rhynoEv.main.vehicles.tableHeadings[0]}
             </h2>
             <DataTable
               data={vehicle.specs}
-              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
+              columns={getColumnDefinition(rhynoEv.main.vehicles.tableHeaders)}
             />
           </div>
           <div className="mb-8 space-y-8">
             <h2 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-3xl">
-              {rhynoEv.pages.vehicles.tableHeadings[2]}
+              {rhynoEv.main.vehicles.tableHeadings[2]}
             </h2>
             <DataTable
               data={vehicle.batteryFeatures}
-              columns={getColumnDefinition(rhynoEv.pages.vehicles.tableHeaders)}
+              columns={getColumnDefinition(rhynoEv.main.vehicles.tableHeaders)}
             />
           </div>
           <a
