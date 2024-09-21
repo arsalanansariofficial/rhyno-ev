@@ -71,7 +71,6 @@
         }
       ]
     },
-
     "about": {
       "meta": {
         "title": "About us, Rhyno EV",
@@ -82,33 +81,32 @@
         "achievement": "With our first product, we've taken a bold step to create something more than just a vehicle; it's a unique experience of elegance, comfort and style, addressing the pitfalls of conventional electric scooters. Our design prioritizes safety, eliminating concerns of fires and ensuring a longer battery lifespan with our battery technology. Perfectly suited for fleet operators, especially in tourist-centric locations like Goa, our rugged yet aesthetically appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new era in sustainable and dependable electric transportation."
       }
     },
-
     "vehicles": {
       "meta": {
         "title": "vehicles, Rhyno EV",
         "description": "vehicles that have less friction than ever before."
       },
-      "defaultVariant": "slate",
+      "defaultVariant": "black",
       "tableHeaders": ["feature", "description"],
       "tableHeadings": ["Specifications", "Key Features", "Battery"],
       "defaultVehicle": {
         "id": "gtx-lite",
         "name": "GTX LITE",
         "images": {
-          "slate": [
-            "/img/vehicles/gtx.png",
-            "/img/vehicles/gtx.png",
-            "/img/vehicles/gtx.png"
+          "black": [
+            "/img/vehicles/gtx-lite/black.png",
+            "/img/vehicles/gtx-lite/black.png",
+            "/img/vehicles/gtx-lite/black.png"
           ],
           "blue": [
-            "/img/vehicles/gtx.png",
-            "/img/vehicles/gtx.png",
-            "/img/vehicles/gtx.png"
+            "/img/vehicles/gtx-lite/black.png",
+            "/img/vehicles/gtx-lite/black.png",
+            "/img/vehicles/gtx-lite/black.png"
           ],
-          "teal": [
-            "/img/vehicles/gtx.png",
-            "/img/vehicles/gtx.png",
-            "/img/vehicles/gtx.png"
+          "gray": [
+            "/img/vehicles/gtx-lite/black.png",
+            "/img/vehicles/gtx-lite/black.png",
+            "/img/vehicles/gtx-lite/black.png"
           ]
         },
         "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
@@ -196,21 +194,9 @@
           "id": "gtx-lite",
           "name": "GTX LITE",
           "images": {
-            "slate": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ],
-            "blue": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ],
-            "teal": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ]
+            "black": ["/img/vehicles/gtx-lite/black.png"],
+            "blue": ["/img/vehicles/gtx-lite/blue.png"],
+            "gray": ["/img/vehicles/gtx-lite/gray.png"]
           },
           "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -296,21 +282,9 @@
           "id": "gtx",
           "name": "GTX",
           "images": {
-            "slate": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ],
-            "blue": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ],
-            "teal": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ]
+            "black": ["/img/vehicles/gtx/black.png"],
+            "blue": ["/img/vehicles/gtx/blue.png"],
+            "gray": ["/img/vehicles/gtx/gray.png"]
           },
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive link for GTX : a. Vehicle image b. Color selection buttons c. Textual details Rhyno GTX. Buy now 90-150 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -396,21 +370,9 @@
           "id": "gtx-max",
           "name": "GTX MAX",
           "images": {
-            "slate": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ],
-            "blue": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ],
-            "teal": [
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png",
-              "/img/vehicles/gtx.png"
-            ]
+            "black": ["/img/vehicles/gtx-max/black.png"],
+            "blue": ["/img/vehicles/gtx-max/blue.png"],
+            "gray": ["/img/vehicles/gtx-max/gray.png"]
           },
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-120 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhino. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -494,7 +456,6 @@
         }
       ]
     },
-
     "contact": {
       "meta": {
         "title": "Contact us, Rhyno EV",
@@ -509,7 +470,6 @@
         "https://i.ibb.co/9y7nYCD/image-3.jpg"
       ]
     },
-
     "prebook": {
       "meta": {
         "title": "Prebook, Rhyno EV",
@@ -517,7 +477,6 @@
       },
       "successMessage": "🎉 Payment Sucessful."
     },
-
     "auth": {
       "meta": {
         "title": "Auth | Rhyno EV",
@@ -533,7 +492,6 @@
         "order": false
       }
     },
-
     "compare": {
       "meta": {
         "title": "Compare | Rhyno EV",
@@ -609,7 +567,6 @@
         }
       ]
     },
-
     "rentals": {
       "meta": {
         "title": "Rentals | Rhyno EV",

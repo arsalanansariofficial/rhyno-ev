@@ -28,11 +28,9 @@ export default function Compare() {
                 <div className="w-full rounded-xl">
                   <div>
                     <div className="relative w-full">
-                      <div className="animate-blob absolute -left-4 top-0 h-72 w-72 rounded-full bg-violet-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
-                      <div className="animate-blob animation-delay-4000 absolute -bottom-24 right-20 h-72 w-72 rounded-full bg-fuchsia-300 opacity-70 mix-blend-multiply blur-xl filter"></div>
                       <ShadCarousel.Carousel>
                         <ShadCarousel.CarouselContent>
-                          {vehicle.images.slate.map((image, index) => {
+                          {vehicle.images.black.map((image, index) => {
                             return (
                               <ShadCarousel.CarouselItem
                                 key={index}
@@ -41,7 +39,7 @@ export default function Compare() {
                                 <img
                                   alt="hero"
                                   src={image}
-                                  className="w-full rounded-lg object-cover object-center shadow-2xl"
+                                  className="w-full rounded-lg object-cover object-center"
                                 />
                               </ShadCarousel.CarouselItem>
                             );
