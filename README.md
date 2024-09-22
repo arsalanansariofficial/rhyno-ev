@@ -56,14 +56,6 @@ Start the dev server
 
 Currently this application does not require any environment variables.
 
-## Lessons Learned
-
-I have learned a lot while building this application. Major challenge that I faced was hosting.
-
-I have used Next JS and like any other JavaScript framework it does require a server in order to host but I wanted to host the application as completely static because I did not require any server side code that needs to be executed or user authentication.
-
-While finding a solution for that I kept reading the documentation and some research using AI then I came accross a solution that further needs to be modified which was next export script, I did change my confguration for a while and did some minor tweaks and it worked for me.
-
 ## Author
 
 - [Arsalan Ansari](https://arsalanansariofficial.github.io/arsalanansariofficial)
