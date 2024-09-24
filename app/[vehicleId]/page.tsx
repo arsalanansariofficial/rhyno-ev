@@ -4,12 +4,22 @@ import Vehicle from '@/_components/vehicle';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
 
+function fetchVehicle(vehicleId: string) {
+  const vehicle = rhynoEv.main.vehicles.vehicleList.find(
+    vehicle => vehicle.id === vehicleId
+  )!;
+
+  if (!vehicle) {
+    return rhynoEv.main.vehicles.defaultVehicle;
+  }
+
+  return vehicle;
+}
+
 export async function generateMetadata(props: {
   params: { vehicleId: string };
 }): Promise<Metadata> {
-  const vehicle = rhynoEv.main.vehicles.vehicleList.find(
-    vehicle => vehicle.id === props.params.vehicleId
-  )!;
+  const vehicle = fetchVehicle(props.params.vehicleId);
 
   return {
     title: vehicle.name,
@@ -18,15 +28,5 @@ export async function generateMetadata(props: {
 }
 
 export default function VehiclePage(props: { params: { vehicleId: string } }) {
-  const vehicleIndex = rhynoEv.main.vehicles.vehicleList.findIndex(
-    vehicle => vehicle.id === props.params.vehicleId
-  );
-
-  return <Vehicle vehicleIndex={vehicleIndex} />;
-}
-
-export async function generateStaticParams() {
-  return rhynoEv.main.vehicles.vehicleList.map(vehicle => ({
-    vehicleId: vehicle.id
-  }));
+  return <Vehicle vehicle={fetchVehicle(props.params.vehicleId)} />;
 }

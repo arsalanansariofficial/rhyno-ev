@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+import Link from 'next/link';
+
 import Autoplay from 'embla-carousel-autoplay';
 import * as ShadCarousel from '@/_components/ui/carousel';
 
@@ -55,12 +57,12 @@ export default function Home() {
         </section>
 
         <section className="fixed bottom-16 right-4 hidden">
-          <a
+          <Link
             href={rhynoEv.nav.prebook.href}
             className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
           >
             {rhynoEv.nav.prebook.title}
-          </a>
+          </Link>
         </section>
       </main>
       <Footer />
@@ -120,7 +122,7 @@ function Vehicle(props: {
                       color === variant && 'border-2 border-sky-800'
                     )}
                   >
-                    <span className="bg-black-500 hidden"></span>
+                    <span className="hidden bg-black-500"></span>
                     <span className="hidden bg-blue-500"></span>
                     <span className="hidden bg-gray-500"></span>
                   </button>
@@ -136,12 +138,12 @@ function Vehicle(props: {
           </div>
         </div>
 
-        <a
+        <Link
           href={rhynoEv.nav.prebook.href}
           className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
         >
           {rhynoEv.nav.prebook.title}
-        </a>
+        </Link>
       </div>
     </section>
   );

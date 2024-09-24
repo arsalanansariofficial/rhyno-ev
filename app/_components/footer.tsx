@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import * as faSolid from '@fortawesome/free-solid-svg-icons';
 import * as faBrand from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,7 +26,7 @@ export default function Footer() {
             </p>
             <ul className="mt-8 flex justify-center gap-4 sm:justify-start">
               <li>
-                <a
+                <Link
                   target="_blank"
                   rel="noreferrer"
                   href={rhynoEv.nav.instagram.href}
@@ -35,10 +37,10 @@ export default function Footer() {
                     icon={faBrand.faInstagram}
                     className="text-xl"
                   />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   target="_blank"
                   rel="noreferrer"
                   href={rhynoEv.nav.linkedIn.href}
@@ -49,7 +51,7 @@ export default function Footer() {
                     icon={faBrand.faLinkedin}
                     className="text-xl"
                   />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -58,28 +60,28 @@ export default function Footer() {
               <p className="text-lg font-medium text-gray-900">Our Services</p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href={rhynoEv.footer.ourServices.career.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
                     {rhynoEv.footer.ourServices.career.title}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href={rhynoEv.footer.ourServices.rentals.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
                     {rhynoEv.footer.ourServices.rentals.title}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href={rhynoEv.footer.ourServices.vehicles.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
                     {rhynoEv.footer.ourServices.vehicles.title}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -87,7 +89,7 @@ export default function Footer() {
               <p className="text-lg font-medium text-gray-900">Contact Us</p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li className="mx-auto max-w-40 text-left sm:mx-0">
-                  <a
+                  <Link
                     href={rhynoEv.footer.contactUs.email.href}
                     className="inline-flex items-center justify-center gap-1.5"
                   >
@@ -98,10 +100,10 @@ export default function Footer() {
                     <span className="text-gray-700">
                       {rhynoEv.footer.contactUs.email.title}
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="mx-auto max-w-40 text-left sm:mx-0">
-                  <a
+                  <Link
                     href={rhynoEv.footer.contactUs.phone.href}
                     className="inline-flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   >
@@ -112,10 +114,10 @@ export default function Footer() {
                     <span className="text-gray-700">
                       {rhynoEv.footer.contactUs.phone.title}
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="mx-auto flex max-w-40 items-start justify-center gap-1.5 text-left sm:mx-0 ltr:sm:justify-start rtl:sm:justify-end">
-                  <a
+                  <Link
                     href={rhynoEv.footer.contactUs.address.href}
                     title={rhynoEv.footer.contactUs.address.title}
                     className="flex items-center gap-1.5"
@@ -127,7 +129,7 @@ export default function Footer() {
                     <address className="-mt-0.5 line-clamp-2 flex-1 not-italic text-gray-700">
                       {rhynoEv.footer.contactUs.address.title}
                     </address>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -135,28 +137,28 @@ export default function Footer() {
               <p className="text-lg font-medium text-gray-900">Helpful Links</p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href={rhynoEv.footer.helpfulLinks.privacyPolicy.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
                     {rhynoEv.footer.helpfulLinks.privacyPolicy.title}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href={rhynoEv.footer.helpfulLinks.refundPolicy.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
                     {rhynoEv.footer.helpfulLinks.refundPolicy.title}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href={rhynoEv.footer.helpfulLinks.websitePolicy.href}
                     className="text-gray-700 transition hover:text-gray-700/75"
                   >
                     {rhynoEv.footer.helpfulLinks.websitePolicy.title}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -168,12 +170,12 @@ export default function Footer() {
             <p className="text-sm text-gray-500">
               <span className="block sm:inline">
                 created by&nbsp;
-                <a
+                <Link
                   href="https://arsalanansariofficial.github.io/arsalanansariofficial/"
                   className="text-sky-700"
                 >
                   Arsalan Ansari
-                </a>
+                </Link>
               </span>
             </p>
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">

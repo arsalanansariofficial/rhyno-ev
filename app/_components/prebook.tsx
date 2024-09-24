@@ -146,7 +146,11 @@ export default function Prebook() {
                         <Input
                           {...field}
                           type="number"
+                          minLength={16}
+                          maxLength={16}
                           pattern="/\d/."
+                          min={1000000000000000}
+                          max={9999999999999999}
                           placeholder="eg. 1234 5678 9012 3456"
                         />
                       </CnForm.FormControl>
@@ -204,7 +208,7 @@ export default function Prebook() {
                       <CnForm.FormLabel>CVC</CnForm.FormLabel>
                       <CnForm.FormControl>
                         <Input
-                          min={0}
+                          min={100}
                           max={999}
                           {...field}
                           minLength={3}

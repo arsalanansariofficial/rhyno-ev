@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faAngleDown, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -16,56 +18,56 @@ export default function Header({ cta = true }: { cta?: boolean }) {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-4">
-            <a className="block text-teal-600" href={rhynoEv.nav.home.href}>
+            <Link className="block text-teal-600" href={rhynoEv.nav.home.href}>
               <span className="sr-only">{rhynoEv.nav.home.title}</span>
               <img
                 src={rhynoEv.meta.logo}
                 alt={rhynoEv.meta.title}
                 className="aspect-video w-8 sm:w-12"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href={rhynoEv.nav.instagram.href}
               className="hidden text-teal-600 md:block"
             >
               <span className="sr-only">{rhynoEv.nav.instagram.title}</span>
               <FontAwesomeIcon icon={faInstagram} className="text-xl" />
-            </a>
-            <a
+            </Link>
+            <Link
               href={rhynoEv.nav.linkedIn.href}
               className="hidden text-teal-600 md:block"
             >
               <span className="sr-only">{rhynoEv.nav.linkedIn.title}</span>
               <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center md:gap-12">
             <ul className="hidden items-center gap-6 text-sm md:flex">
               <li>
-                <a
+                <Link
                   href={rhynoEv.nav.home.href}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.home.title}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href={rhynoEv.nav.about.href}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.about.title}
-                </a>
+                </Link>
               </li>
               <li>
                 <Nav.NavigationMenu className="m-0 hidden p-0 md:block">
                   <Nav.NavigationMenuList>
                     <Nav.NavigationMenuItem>
                       <Nav.NavigationMenuTrigger className="p-0 text-gray-500 transition hover:text-gray-500/75">
-                        <a href={rhynoEv.nav.vehicles.href}>
+                        <Link href={rhynoEv.nav.vehicles.href}>
                           {rhynoEv.nav.vehicles.title}
-                        </a>
+                        </Link>
                       </Nav.NavigationMenuTrigger>
                       <Nav.NavigationMenuContent>
                         <ul className="min-w-max space-y-2 p-2">
@@ -73,14 +75,14 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                             (menuItem, index) => {
                               return (
                                 <Nav.NavigationMenuLink key={index} asChild>
-                                  <a
+                                  <Link
                                     href={menuItem.href}
                                     className="block select-none space-y-1 rounded-md p-3 leading-none text-gray-500 no-underline outline-none hover:bg-accent hover:text-gray-500/75 focus:bg-accent focus:text-accent-foreground"
                                   >
                                     <div className="text-sm font-medium capitalize leading-none">
                                       {menuItem.title}
                                     </div>
-                                  </a>
+                                  </Link>
                                 </Nav.NavigationMenuLink>
                               );
                             }
@@ -92,23 +94,23 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                 </Nav.NavigationMenu>
               </li>
               <li>
-                <a
+                <Link
                   href={rhynoEv.nav.contact.href}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.contact.title}
-                </a>
+                </Link>
               </li>
             </ul>
             {cta && (
               <div className="flex items-center gap-4">
                 <div className="sm:flex sm:gap-4">
-                  <a
+                  <Link
                     href={rhynoEv.nav.prebook.href}
                     className="text-white rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium shadow"
                   >
                     {rhynoEv.nav.prebook.title}
-                  </a>
+                  </Link>
                 </div>
               </div>
             )}
@@ -126,20 +128,20 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                   <div className="bg-white flex h-screen flex-col justify-between text-left">
                     <ul className="mt-4 space-y-1">
                       <li>
-                        <a
+                        <Link
                           href={rhynoEv.nav.home.href}
                           className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
                         >
                           {rhynoEv.nav.home.title}
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href={rhynoEv.nav.about.href}
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                         >
                           {rhynoEv.nav.about.title}
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <details className="group [&_summary::-webkit-details-marker]:hidden">
@@ -156,12 +158,12 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                               (menuItem, index) => {
                                 return (
                                   <li key={index}>
-                                    <a
+                                    <Link
                                       href={menuItem.href}
                                       className="block rounded-lg px-4 py-2 text-sm font-medium capitalize text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                                     >
                                       {menuItem.title}
-                                    </a>
+                                    </Link>
                                   </li>
                                 );
                               }
@@ -170,17 +172,17 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                         </details>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href={rhynoEv.nav.contact.href}
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                         >
                           {rhynoEv.nav.contact.title}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                     <ul className="mb-16 mt-auto flex gap-4">
                       <li>
-                        <a
+                        <Link
                           href={rhynoEv.nav.instagram.href}
                           className="text-teal-600 md:block"
                         >
@@ -191,10 +193,10 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                             icon={faInstagram}
                             className="text-xl"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href={rhynoEv.nav.linkedIn.href}
                           className="text-teal-600 md:block"
                         >
@@ -205,7 +207,7 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                             icon={faLinkedin}
                             className="text-xl"
                           />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
