@@ -17,6 +17,7 @@ import Footer from '@/_components/footer';
 import { cn, getColumnDefinition } from '@/_lib/utils';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
+import { DialogDescription, DialogTitle } from '@radix-ui/react-dialog';
 
 export default function Vehicle(props: {
   vehicle: typeof rhynoEv.main.vehicles.defaultVehicle;
@@ -108,29 +109,23 @@ export default function Vehicle(props: {
                           {info.description}
                         </p>
                         <Drawer>
-                          <DrawerTrigger>
-                            <Link
-                              title="read more"
-                              href={`#${info.feature}`}
-                              className="mt-6 inline-flex items-center gap-2 font-semibold text-blue-500 hover:text-neutral-600 md:mb-2 lg:mb-0"
-                            >
-                              Learn More
-                              <FontAwesomeIcon
-                                icon={faArrowRight}
-                                className="text-xl"
-                              />
-                            </Link>
+                          <DrawerTrigger className="mt-6 inline-flex items-center gap-2 font-semibold text-blue-500 hover:text-neutral-600 md:mb-2 lg:mb-0">
+                            Learn More
+                            <FontAwesomeIcon
+                              icon={faArrowRight}
+                              className="text-xl"
+                            />
                           </DrawerTrigger>
                           <DrawerContent className="px-4 md:px-12">
-                            <h2 className="text-dark dark:text-white mb-5 text-3xl font-bold capitalize text-neutral-700 sm:text-[40px]/[48px]">
+                            <DialogTitle className="text-dark dark:text-white mb-5 text-3xl font-bold capitalize text-neutral-700 sm:text-[40px]/[48px]">
                               {info.feature}
-                            </h2>
-                            <p
+                            </DialogTitle>
+                            <DialogDescription
                               key={index}
                               className="text-body-color dark:text-dark-6 mb-5 text-base text-teal-600"
                             >
                               {info.description}
-                            </p>
+                            </DialogDescription>
                           </DrawerContent>
                         </Drawer>
                       </dd>
