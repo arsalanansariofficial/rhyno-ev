@@ -11,21 +11,27 @@ import * as Shad from '@/_components/ui/sheet';
 import * as Nav from '@/_components/ui/navigation-menu';
 
 import rhynoEv from '../../public/about/rhyno-ev.json';
+import { useRouter } from 'next/navigation';
 
 export default function Header({ cta = true }: { cta?: boolean }) {
+  const router = useRouter();
+
   return (
     <header className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-4">
-            <Link className="block text-teal-600" href={rhynoEv.nav.home.href}>
+            <button
+              className="block text-teal-600"
+              onClick={() => router.push('/')}
+            >
               <span className="sr-only">{rhynoEv.nav.home.title}</span>
               <img
                 src={rhynoEv.meta.logo}
                 alt={rhynoEv.meta.title}
                 className="aspect-video w-8 sm:w-12"
               />
-            </Link>
+            </button>
             <Link
               href={rhynoEv.nav.instagram.href}
               className="hidden text-teal-600 md:block"
@@ -45,12 +51,12 @@ export default function Header({ cta = true }: { cta?: boolean }) {
           <div className="flex items-center md:gap-12">
             <ul className="hidden items-center gap-6 text-sm md:flex">
               <li>
-                <Link
-                  href={rhynoEv.nav.home.href}
+                <button
+                  onClick={() => router.push('/')}
                   className="text-gray-500 transition hover:text-gray-500/75"
                 >
                   {rhynoEv.nav.home.title}
-                </Link>
+                </button>
               </li>
               <li>
                 <Link
@@ -128,12 +134,12 @@ export default function Header({ cta = true }: { cta?: boolean }) {
                   <div className="bg-white flex h-screen flex-col justify-between text-left">
                     <ul className="mt-4 space-y-1">
                       <li>
-                        <Link
-                          href={rhynoEv.nav.home.href}
-                          className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+                        <button
+                          onClick={() => router.push('/')}
+                          className="block w-full rounded-lg px-4 py-2 text-left text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-700"
                         >
                           {rhynoEv.nav.home.title}
-                        </Link>
+                        </button>
                       </li>
                       <li>
                         <Link

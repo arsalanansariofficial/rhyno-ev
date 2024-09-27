@@ -2,13 +2,13 @@
   "meta": {
     "title": "Rhyno EV",
     "description": "Welcome to Rhyno EV, the leading electric vehicle company in the United States.",
-    "logo": "/img/icons/rhyno-ev.png"
+    "logo": "img/icons/rhyno-ev.png"
   },
   "nav": {
     "home": {
-      "href": "/",
+      "href": "",
       "title": "Home",
-      "icon": "/img/icons/logo.svg"
+      "icon": "img/icons/logo.svg"
     },
     "instagram": {
       "href": "https://github.com/arsalanansariofficial",
@@ -19,11 +19,11 @@
       "title": "Linked In"
     },
     "about": {
-      "href": "/about",
+      "href": "about",
       "title": "About us"
     },
     "vehicles": {
-      "href": "/gtx-lite",
+      "href": "gtx-lite",
       "title": "vehicles",
       "subMenu": [
         { "title": "GTX LITE", "href": "gtx-lite" },
@@ -33,15 +33,15 @@
       ]
     },
     "contact": {
-      "href": "/contact",
+      "href": "contact",
       "title": "Contact us"
     },
     "prebook": {
-      "href": "/prebook",
+      "href": "prebook",
       "title": "Pre-book Now"
     },
     "auth": {
-      "href": "/auth",
+      "href": "auth",
       "title": "Auth"
     }
   },
@@ -94,19 +94,19 @@
         "name": "GTX LITE",
         "images": {
           "black": [
-            "/img/vehicles/gtx-lite/black.png",
-            "/img/vehicles/gtx-lite/black.png",
-            "/img/vehicles/gtx-lite/black.png"
+            "img/vehicles/gtx-lite/black.png",
+            "img/vehicles/gtx-lite/black.png",
+            "img/vehicles/gtx-lite/black.png"
           ],
           "blue": [
-            "/img/vehicles/gtx-lite/black.png",
-            "/img/vehicles/gtx-lite/black.png",
-            "/img/vehicles/gtx-lite/black.png"
+            "img/vehicles/gtx-lite/black.png",
+            "img/vehicles/gtx-lite/black.png",
+            "img/vehicles/gtx-lite/black.png"
           ],
           "gray": [
-            "/img/vehicles/gtx-lite/black.png",
-            "/img/vehicles/gtx-lite/black.png",
-            "/img/vehicles/gtx-lite/black.png"
+            "img/vehicles/gtx-lite/black.png",
+            "img/vehicles/gtx-lite/black.png",
+            "img/vehicles/gtx-lite/black.png"
           ]
         },
         "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
@@ -194,9 +194,9 @@
           "id": "gtx-lite",
           "name": "GTX LITE",
           "images": {
-            "black": ["/img/vehicles/gtx-lite/black.png"],
-            "blue": ["/img/vehicles/gtx-lite/blue.png"],
-            "gray": ["/img/vehicles/gtx-lite/gray.png"]
+            "black": ["img/vehicles/gtx-lite/black.png"],
+            "blue": ["img/vehicles/gtx-lite/blue.png"],
+            "gray": ["img/vehicles/gtx-lite/gray.png"]
           },
           "description": "Indulge perfect harmony of power and range with this Rhyno. Offering an experience with its novel 1500W motor, it ensures a thrilling ride while still delivering a stable 80-100 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 1500W motor and a 1.8 kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -282,9 +282,9 @@
           "id": "gtx",
           "name": "GTX",
           "images": {
-            "black": ["/img/vehicles/gtx/black.png"],
-            "blue": ["/img/vehicles/gtx/blue.png"],
-            "gray": ["/img/vehicles/gtx/gray.png"]
+            "black": ["img/vehicles/gtx/black.png"],
+            "blue": ["img/vehicles/gtx/blue.png"],
+            "gray": ["img/vehicles/gtx/gray.png"]
           },
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive link for GTX : a. Vehicle image b. Color selection buttons c. Textual details Rhyno GTX. Buy now 90-150 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -370,9 +370,9 @@
           "id": "gtx-max",
           "name": "GTX MAX",
           "images": {
-            "black": ["/img/vehicles/gtx-max/black.png"],
-            "blue": ["/img/vehicles/gtx-max/blue.png"],
-            "gray": ["/img/vehicles/gtx-max/gray.png"]
+            "black": ["img/vehicles/gtx-max/black.png"],
+            "blue": ["img/vehicles/gtx-max/blue.png"],
+            "gray": ["img/vehicles/gtx-max/gray.png"]
           },
           "description": "Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-120 km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhino. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.",
           "specs": [
@@ -461,13 +461,13 @@
         "title": "Contact us, Rhyno EV",
         "description": "Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India."
       },
-      "pattern": "/img/icons/pattern.svg",
+      "pattern": "img/icons/pattern.svg",
       "successMessage": "🎉 Thank you for reaching us out, we will get back to you shortly.",
       "tagline": "At the same time, the fact that we are wholly owned and totally independent from manufacturer and other group control gives you confidence that we will only recommend what is right for you.",
       "people": [
-        "https://i.ibb.co/gFb3ns6/image-1.jpg",
-        "https://i.ibb.co/rfHFq15/image-2.jpg",
-        "https://i.ibb.co/9y7nYCD/image-3.jpg"
+        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ]
     },
     "prebook": {
@@ -605,11 +605,11 @@
         "title": "Career"
       },
       "rentals": {
-        "href": "/rentals",
+        "href": "rentals",
         "title": "Rentals"
       },
       "vehicles": {
-        "href": "/gtx-lite",
+        "href": "gtx-lite",
         "title": "vehicles"
       }
     },
@@ -624,20 +624,20 @@
       },
       "address": {
         "href": "https://maps.app.goo.gl/AaBFXpFsSZDQGnHg8",
-        "title": "Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India."
+        "title": "UP, India"
       }
     },
     "helpfulLinks": {
       "privacyPolicy": {
-        "href": "/privacy-policy",
+        "href": "privacy-policy",
         "title": "Privacy policy"
       },
       "refundPolicy": {
-        "href": "/refund-policy",
+        "href": "refund-policy",
         "title": "Refund policy"
       },
       "websitePolicy": {
-        "href": "/website-policy",
+        "href": "website-policy",
         "title": "Website policy"
       }
     }

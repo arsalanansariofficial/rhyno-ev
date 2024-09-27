@@ -16,10 +16,10 @@ function fetchVehicle(vehicleId: string) {
   return vehicle;
 }
 
-export async function generateMetadata(props: {
-  params: { vehicleId: string };
-}): Promise<Metadata> {
-  const vehicle = fetchVehicle(props.params.vehicleId);
+type Props = { params: Promise<{ vehicleId: string }> };
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const vehicle = fetchVehicle((await props.params).vehicleId);
 
   return {
     title: vehicle.name,
@@ -27,6 +27,12 @@ export async function generateMetadata(props: {
   };
 }
 
-export default function VehiclePage(props: { params: { vehicleId: string } }) {
-  return <Vehicle vehicle={fetchVehicle(props.params.vehicleId)} />;
+export function generateStaticParams() {
+  return rhynoEv.main.vehicles.vehicleList.map(vehicle => ({
+    vehicleId: vehicle.id
+  }));
+}
+
+export default async function VehiclePage(props: Props) {
+  return <Vehicle vehicle={fetchVehicle((await props.params).vehicleId)} />;
 }
